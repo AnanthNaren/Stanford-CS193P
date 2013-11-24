@@ -15,5 +15,4 @@
 -(Card *) drawRandomCard;
 
 
-
 @end

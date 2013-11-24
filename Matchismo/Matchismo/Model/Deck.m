@@ -15,13 +15,14 @@
 @end
 
 
+
 @implementation Deck
+
 
 -(NSMutableArray *) cards{
     if(!_cards) _cards = [[NSMutableArray alloc]init];
     return _cards;
 }
-
 -(void) addCard:(Card *)card atTop:(BOOL)atTop{
     
     if(atTop){
@@ -31,11 +32,11 @@
     }
     
 }
-
 -(void) addCard:(Card *)card{
     
     [self addCard:card atTop:NO];
 }
+
 
 -(Card *) drawRandomCard{
     Card *randomCard = nil;
