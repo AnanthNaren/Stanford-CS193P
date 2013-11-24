@@ -24,7 +24,23 @@
     return _cards;
 }
 
-
+-(instancetype)initWithCardCount:(NSUInteger)count usingDeck:(Deck *)deck{
+    self  = [super init]; //Super's Designated Initializer (of NSObject)
+    if(self){
+        for(int i=0; i<count; i++){
+            Card *card = [deck drawRandomCard];
+            
+            //protecting against nill.
+            if(card){
+                [self.cards addObject:card];
+            }else{
+                self = nil;
+                break;
+            }
+        }
+    }
+    return self;
+}
 
 
 -(Card *)cardAtIndex:(NSUInteger)index{
