@@ -70,5 +70,12 @@
     [self updateUI];
 }
 
+- (IBAction)gameModeControl:(UISegmentedControl *)sender {
+    
+    
+}
+
+
+
 
 @end
