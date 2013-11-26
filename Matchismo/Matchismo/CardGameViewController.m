@@ -15,13 +15,11 @@
 @property (nonatomic, strong) Deck *deck;
 @property (nonatomic, strong) CardMatchingGame *game;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
-
-@end 
+@end
 
 @implementation CardGameViewController
 
 -(CardMatchingGame *)game{
-    
     if(!_game) _game = [[CardMatchingGame alloc] initWithCardCount:[self.cardButtons count]
                                                          usingDeck:[self createDeck]];
     return _game;
@@ -45,8 +43,8 @@
     [self updateUI];
 }
 
+
 -(void) updateUI{
-    
     for(UIButton *cardButton in self.cardButtons){
         int cardButtonIndex = [self.cardButtons indexOfObject:cardButton];
         Card *card = [self.game cardAtIndex:cardButtonIndex];
@@ -54,17 +52,23 @@
         [cardButton setBackgroundImage:[self backgroundImageForCard:card]
                               forState:UIControlStateNormal];
         cardButton.enabled = !card.isMatched;
-        self.scoreLabel.text = [NSString stringWithFormat:@"Score %d",self.game.score];
+        self.scoreLabel.text = [NSString stringWithFormat:@"Score  %d",self.game.score];      
     }
 }
+
 
 -(NSString *)titleForCard:(Card *)card{
     return card.isChosen ? card.contents : @"";
 }
 
-
 -(UIImage *)backgroundImageForCard:(Card *)card{
     return [UIImage imageNamed:card.isChosen ? @"cardfront" : @"cardback"];
 }
+
+- (IBAction)dealButton:(UIButton *)sender {
+    self.game = nil;
+    [self updateUI];
+}
+
 
 @end
