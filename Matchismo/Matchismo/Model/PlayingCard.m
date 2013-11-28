@@ -11,18 +11,32 @@
 @implementation PlayingCard
 
 
--(int)match:(NSArray *)otherCards{
+-(int)match:(NSArray *)Cards{
     int score = 0;
-    if([otherCards count] == 1){
-        PlayingCard *otherCard = [otherCards firstObject];
-        if(otherCard.rank == self.rank){
-            score = 4;
-        }else if([otherCard.suit isEqualToString:self.suit]){
-            score = 1;
-        }
+    if([Cards count] == 2){
+       score = [self match:Cards[0] With:Cards[1]];
+    }else if([Cards count] == 3){
+        score = [self match:Cards[0] With:Cards[1]] + [self match:Cards[1] With:Cards[2]] + [self match:Cards[0] With:Cards[2]];
+        if (score == 2) score = 1;
+        if (score == 3) score = 2;
     }
+    
+ 
     return score;
 }
+
+-(int)match:(PlayingCard *)cardA With:(PlayingCard *)cardB{
+    int score = 0 ;
+    
+    if(cardA.rank == cardB.rank){
+        score = 1;
+    }else if([cardA.suit isEqualToString:cardB.suit]){
+        score = 1;
+    }
+    
+    return score;
+}
+
 
 
 -(NSString *) contents{

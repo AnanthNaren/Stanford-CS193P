@@ -12,9 +12,16 @@
 @interface  CardMatchingGame()
 @property (nonatomic, readwrite) NSInteger score;
 @property (nonatomic, strong) NSMutableArray* cards;
+@property (nonatomic, strong) NSMutableArray* cardsToBeMatched; //
 @end
 
 @implementation CardMatchingGame
+
+-(NSMutableArray *)cardsToBeMatched{
+    if(!_cardsToBeMatched) _cardsToBeMatched = [[NSMutableArray alloc]init];
+    return _cardsToBeMatched;
+}
+
 
 -(NSMutableArray *)cards{
     if(!_cards) _cards = [[NSMutableArray alloc] init];
@@ -38,6 +45,8 @@
             }
         }
     }
+    self.gameMode = 3;              //
+    
     return self;
 }
 
@@ -45,8 +54,8 @@
     return (index < [self.cards count]) ? self.cards[index] : nil;
 }
 
-static const int MISMATCH_PENALTY = 2;
 static const int MATCH_BONUS = 4;
+static const int MISMATCH_PENALTY = 2;
 static const int COST_TO_CHOOSE = 1;
 
 //Card Matching Game Logic
@@ -55,26 +64,41 @@ static const int COST_TO_CHOOSE = 1;
     if(!card.isMatched){
         if(card.isChosen){
             card.chosen = NO;
+            [self.cardsToBeMatched removeObject:card];
         }else{
-            //Match against the other cards
-            for(Card* otherCard in self.cards){
-                if(otherCard.isChosen && !otherCard.isMatched){
-                    int matchScore = [card match:@[otherCard]];
-                    if(matchScore){
-                        self.score += matchScore * MATCH_BONUS;
-                        card.matched = YES;
-                        otherCard.matched = YES;
-                    }else{
-                        self.score -= MISMATCH_PENALTY;
-                        otherCard.chosen = NO;
-                    }
-                    break;  // For choosing only 2 cards
+            card.chosen = YES;
+            [self.cardsToBeMatched addObject:card];
+            if([self.cardsToBeMatched count] == self.gameMode){
+                int matchScore = [card match:self.cardsToBeMatched];
+                if(matchScore){
+                    [self markCardsAsMatched];
+                    [self.cardsToBeMatched removeAllObjects];
+                }else{
+                    // Will change the logic after using animation
+                    [self.cardsToBeMatched removeLastObject];
+                    [self markCardsAsNotChosen];
+                    [self.cardsToBeMatched removeAllObjects];
+                    [self.cardsToBeMatched addObject:card];
                 }
             }
-            card.chosen = YES;
-            self.score -= COST_TO_CHOOSE;
         }
     }
+}
+
+
+
+
+-(void) markCardsAsMatched{
+    for(Card* card in self.cardsToBeMatched){
+        card.matched = YES;
+    }
+}
+
+-(void) markCardsAsNotChosen{
+    for(Card* card in self.cardsToBeMatched){
+        card.chosen = NO;
+    }
+    
 }
 
 
