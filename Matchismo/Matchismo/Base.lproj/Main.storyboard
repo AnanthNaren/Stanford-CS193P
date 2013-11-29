@@ -394,7 +394,7 @@
                                     <action selector="dealButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wQG-7i-ezh"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="F7G-xp-AyS">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="F7G-xp-AyS">
                                 <rect key="frame" x="20" y="18" width="136" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -404,7 +404,7 @@
                                 </segments>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <action selector="gameModeControl:" destination="vXZ-lx-hvc" eventType="valueChanged" id="bPF-gc-LJ0"/>
+                                    <action selector="gameModeSelector:" destination="vXZ-lx-hvc" eventType="valueChanged" id="LKr-Ls-zMb"/>
                                 </connections>
                             </segmentedControl>
                         </subviews>
@@ -447,6 +447,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-179" y="37"/>
         </scene>
     </scenes>
     <resources>

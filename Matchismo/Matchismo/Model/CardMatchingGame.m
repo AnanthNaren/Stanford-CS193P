@@ -44,9 +44,7 @@
                 break;
             }
         }
-    }
-    self.gameMode = 2;              //
-    
+    }    
     return self;
 }
 
