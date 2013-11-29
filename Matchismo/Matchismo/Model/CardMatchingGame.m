@@ -45,7 +45,7 @@
             }
         }
     }
-    self.gameMode = 3;              //
+    self.gameMode = 2;              //
     
     return self;
 }
@@ -65,6 +65,7 @@ static const int COST_TO_CHOOSE = 1;
         if(card.isChosen){
             card.chosen = NO;
             [self.cardsToBeMatched removeObject:card];
+            self.score -= COST_TO_CHOOSE;
         }else{
             card.chosen = YES;
             [self.cardsToBeMatched addObject:card];
@@ -73,12 +74,14 @@ static const int COST_TO_CHOOSE = 1;
                 if(matchScore){
                     [self markCardsAsMatched];
                     [self.cardsToBeMatched removeAllObjects];
+                    self.score += matchScore * MATCH_BONUS;
                 }else{
                     // Will change the logic after using animation
                     [self.cardsToBeMatched removeLastObject];
                     [self markCardsAsNotChosen];
                     [self.cardsToBeMatched removeAllObjects];
                     [self.cardsToBeMatched addObject:card];
+                    self.score -= MISMATCH_PENALTY;
                 }
             }
         }
