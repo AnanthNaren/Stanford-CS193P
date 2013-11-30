@@ -10,7 +10,6 @@
 
 @implementation PlayingCard
 
-
 -(int)match:(NSArray *)Cards{
     int score = 0;
     if([Cards count] == 2){
@@ -20,8 +19,6 @@
         if (score == 2) score = 1;
         if (score == 3) score = 2;
     }
-    
- 
     return score;
 }
 
@@ -36,8 +33,6 @@
     
     return score;
 }
-
-
 
 -(NSString *) contents{
     NSArray *rankStrings = [PlayingCard rankStrings];

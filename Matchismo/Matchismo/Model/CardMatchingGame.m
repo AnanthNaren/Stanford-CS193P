@@ -22,18 +22,14 @@
     return _cardsToBeMatched;
 }
 
-
 -(NSMutableArray *)cards{
     if(!_cards) _cards = [[NSMutableArray alloc] init];
     return _cards;
 }
 
 -(instancetype)initWithCardCount:(NSUInteger)count usingDeck:(Deck *)deck{
-    
     self = [super init]; //superclass designated initializer
-    
     if(self){
-        
         for(int i=0; i<count; i++){
             Card *randomCard = [deck drawRandomCard];
             //Protecting against NIL
@@ -85,8 +81,6 @@ static const int COST_TO_CHOOSE = 1;
         }
     }
 }
-
-
 
 
 -(void) markCardsAsMatched{

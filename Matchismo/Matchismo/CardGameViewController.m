@@ -57,8 +57,6 @@
     }
 }
 
-
-
 -(void) updateUI{
     for(UIButton *cardButton in self.cardButtons){
         int cardButtonIndex = [self.cardButtons indexOfObject:cardButton];
@@ -67,7 +65,7 @@
         [cardButton setBackgroundImage:[self backgroundImageForCard:card]
                               forState:UIControlStateNormal];
         cardButton.enabled = !card.isMatched;
-        self.scoreLabel.text = [NSString stringWithFormat:@"Score  %d",self.game.score];      
+        self.scoreLabel.text = [NSString stringWithFormat:@"Matched J♥ J♠ for 4 points Score  %d",self.game.score];      
     }
 }
 
@@ -90,6 +88,7 @@
     if(index == 0) self.game.gameMode = 2;
     if(index == 1) self.game.gameMode = 3;
  }
+
 
 
 
