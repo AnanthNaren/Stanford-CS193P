@@ -14,7 +14,7 @@
 @property (nonatomic, strong) Deck *deck;
 @property (nonatomic, strong) CardMatchingGame *game;
 @property (nonatomic,strong) IBOutletCollection(UIButton) NSArray *cardButtons;
-@property(nonatomic, strong)UISegmentedControl *gameModeControl;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *gameModeController;
 @end
 
 @implementation CardGameViewController
@@ -24,42 +24,40 @@
                                                          usingDeck:[self createDeck]];
     return _game;
 }
-
 -(Deck *)deck{
     if(!_deck) _deck = [self createDeck];
     return _deck;
 }
-
 -(Deck *) createDeck{
     return [[PlayingCardDeck alloc] init];
 }
 
+/*
+ touchCardButton:
+ ----------------
+ This is the action method of the card button, which allows you to choose a
+ card only when the user selects the game mode through segmented control
+  */
+
 - (IBAction)touchCardButton:(UIButton*)sender {
-    [self configureGameMode];
-    int cardButtonIndex = [self.cardButtons indexOfObject:sender];
-    [self.game chooseCardAtIndex:cardButtonIndex];
-    [self updateUI];
-}
-
--(void)configureGameMode{
-    int gameMode = -1;
-    while (true) {
-        if(gameMode != UISegmentedControlNoSegment){
-            if(gameMode == 0) self.game.gameMode = 2;
-            if(gameMode == 1) self.game.gameMode = 3;
-            break;
-        }
+    if(self.game.gameMode){
+        int cardButtonIndex = [self.cardButtons indexOfObject:sender];
+        [self.game chooseCardAtIndex:cardButtonIndex];
+        [self updateUI];
+        [self gameModeControllerEnabled:NO];
+    }else{
         self.scoreLabel.text = [NSString stringWithFormat:@"Please select the game mode"];
+        return;
     }
-    self.scoreLabel.text = [NSString stringWithFormat:@"You have decided to play with %d cards",self.game.gameMode];
-    [self gameModeSelectorState:NO];
 }
 
--(void) gameModeSelectorState:(BOOL)state{
-    for(int i=0; i<[self.gameModeControl numberOfSegments]; i++){
-        [self.gameModeControl setEnabled:state forSegmentAtIndex:i];
+-(void) gameModeControllerEnabled:(BOOL)state{
+    for(int i=0; i< [self.gameModeController numberOfSegments]; i++ ){
+        [self.gameModeController setEnabled:state forSegmentAtIndex:i];
     }
 }
+
+
 
 -(void) updateUI{
     for(UIButton *cardButton in self.cardButtons){
@@ -84,11 +82,15 @@
 - (IBAction)dealButton:(UIButton *)sender {
     self.game = nil;
     [self updateUI];
-    [self gameModeSelectorState:YES];
+    [self gameModeControllerEnabled:YES];
 }
 
-- (IBAction)gameModeSelector:(UISegmentedControl *)sender {
-    self.gameModeControl = sender;
-}
+- (IBAction)chooseMode:(UISegmentedControl *)sender {
+    int index = [sender selectedSegmentIndex];
+    if(index == 0) self.game.gameMode = 2;
+    if(index == 1) self.game.gameMode = 3;
+ }
+
+
 
 @end
