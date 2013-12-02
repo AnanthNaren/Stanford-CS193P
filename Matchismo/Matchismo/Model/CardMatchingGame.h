@@ -19,4 +19,10 @@
 @property(nonatomic, readonly) NSInteger score;
 @property (nonatomic) NSInteger gameMode;
 
+struct cardGameStatus{
+    int matchStatus;
+    __unsafe_unretained NSMutableArray* chosenCards;
+};
+
+
 @end

@@ -51,12 +51,6 @@
     }
 }
 
--(void) gameModeControllerEnabled:(BOOL)state{
-    for(int i=0; i< [self.gameModeController numberOfSegments]; i++ ){
-        [self.gameModeController setEnabled:state forSegmentAtIndex:i];
-    }
-}
-
 -(void) updateUI{
     for(UIButton *cardButton in self.cardButtons){
         int cardButtonIndex = [self.cardButtons indexOfObject:cardButton];
@@ -65,9 +59,16 @@
         [cardButton setBackgroundImage:[self backgroundImageForCard:card]
                               forState:UIControlStateNormal];
         cardButton.enabled = !card.isMatched;
-        self.scoreLabel.text = [NSString stringWithFormat:@"Matched J♥ J♠ for 4 points Score  %d",self.game.score];      
+        self.scoreLabel.text = [NSString stringWithFormat:@"Matched J♥ J♠ for 4 points Score  %d",self.game.score];
     }
 }
+
+-(void) gameModeControllerEnabled:(BOOL)state{
+    for(int i=0; i< [self.gameModeController numberOfSegments]; i++ ){
+        [self.gameModeController setEnabled:state forSegmentAtIndex:i];
+    }
+}
+
 
 -(NSString *)titleForCard:(Card *)card{
     return card.isChosen ? card.contents : @"";
@@ -83,13 +84,11 @@
     [self gameModeControllerEnabled:YES];
 }
 
+
 - (IBAction)chooseMode:(UISegmentedControl *)sender {
     int index = [sender selectedSegmentIndex];
     if(index == 0) self.game.gameMode = 2;
     if(index == 1) self.game.gameMode = 3;
  }
-
-
-
 
 @end
