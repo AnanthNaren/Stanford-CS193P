@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CardMatchingGame.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CardMatchingGame</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardMatchingGame.h</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardMatchingGame/initWithCardCount:usingDeck:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardMatchingGame.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithCardCount:(NSUInteger)count usingDeck:(Deck *)deck</Declaration>
+			
+			
+			<Anchor>//api/name/initWithCardCount:usingDeck:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardMatchingGame/cardAtIndex:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardMatchingGame.h</DeclaredIn>
+			
+			<Declaration>- (Card *)cardAtIndex:(NSUInteger)index</Declaration>
+			
+			
+			<Anchor>//api/name/cardAtIndex:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardMatchingGame/chooseCardAtIndex:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardMatchingGame.h</DeclaredIn>
+			
+			<Declaration>- (void)chooseCardAtIndex:(NSUInteger)index</Declaration>
+			
+			
+			<Anchor>//api/name/chooseCardAtIndex:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardMatchingGame/setScore:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardMatchingGame.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger score</Declaration>
+			
+			
+			<Anchor>//api/name/score</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardMatchingGame/score</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardMatchingGame.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger score</Declaration>
+			
+			
+			<Anchor>//api/name/score</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CardMatchingGame/score</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardMatchingGame.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger score</Declaration>
+			
+			
+			<Anchor>//api/name/score</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardMatchingGame/setGameMode:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardMatchingGame.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSInteger gameMode</Declaration>
+			
+			
+			<Anchor>//api/name/gameMode</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardMatchingGame/gameMode</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardMatchingGame.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSInteger gameMode</Declaration>
+			
+			
+			<Anchor>//api/name/gameMode</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CardMatchingGame/gameMode</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardMatchingGame.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSInteger gameMode</Declaration>
+			
+			
+			<Anchor>//api/name/gameMode</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardMatchingGame/setContentsOfcardsInvolved:</TokenIdentifier>
+			<Abstract type="html">Stores the current state of the card matching game.
+It has a NSNumber object at the 0th index, which represents the
+current matching state, NotCheckedYet -0 , MatchSuccess -1, MatchFailed -2
+which is then followed by array of cards involved on that match.</Abstract>
+			<DeclaredIn>CardMatchingGame.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSMutableArray *contentsOfcardsInvolved</Declaration>
+			
+			<ReturnValue><Abstract type="html">gameState Array</Abstract></ReturnValue>
+			<Anchor>//api/name/contentsOfcardsInvolved</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardMatchingGame/contentsOfcardsInvolved</TokenIdentifier>
+			<Abstract type="html">Stores the current state of the card matching game.
+It has a NSNumber object at the 0th index, which represents the
+current matching state, NotCheckedYet -0 , MatchSuccess -1, MatchFailed -2
+which is then followed by array of cards involved on that match.</Abstract>
+			<DeclaredIn>CardMatchingGame.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSMutableArray *contentsOfcardsInvolved</Declaration>
+			
+			<ReturnValue><Abstract type="html">gameState Array</Abstract></ReturnValue>
+			<Anchor>//api/name/contentsOfcardsInvolved</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CardMatchingGame/contentsOfcardsInvolved</TokenIdentifier>
+			<Abstract type="html">Stores the current state of the card matching game.
+It has a NSNumber object at the 0th index, which represents the
+current matching state, NotCheckedYet -0 , MatchSuccess -1, MatchFailed -2
+which is then followed by array of cards involved on that match.</Abstract>
+			<DeclaredIn>CardMatchingGame.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSMutableArray *contentsOfcardsInvolved</Declaration>
+			
+			<ReturnValue><Abstract type="html">gameState Array</Abstract></ReturnValue>
+			<Anchor>//api/name/contentsOfcardsInvolved</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardMatchingGame/setCurrentMatchState:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardMatchingGame.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) matchState currentMatchState</Declaration>
+			
+			
+			<Anchor>//api/name/currentMatchState</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardMatchingGame/currentMatchState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardMatchingGame.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) matchState currentMatchState</Declaration>
+			
+			
+			<Anchor>//api/name/currentMatchState</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CardMatchingGame/currentMatchState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardMatchingGame.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) matchState currentMatchState</Declaration>
+			
+			
+			<Anchor>//api/name/currentMatchState</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardMatchingGame/cardsToBeMatched</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardMatchingGame.m</DeclaredIn>
+			
+			<Declaration>- (NSMutableArray *)cardsToBeMatched</Declaration>
+			
+			
+			<Anchor>//api/name/cardsToBeMatched</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardMatchingGame/cards</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardMatchingGame.m</DeclaredIn>
+			
+			<Declaration>- (NSMutableArray *)cards</Declaration>
+			
+			
+			<Anchor>//api/name/cards</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardMatchingGame/loadCurrentGameStateWith:andMatchStatus:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardMatchingGame.m</DeclaredIn>
+			
+			<Declaration>- (void)loadCurrentGameStateWith:(NSMutableArray *)cards andMatchStatus:(int)state</Declaration>
+			
+			
+			<Anchor>//api/name/loadCurrentGameStateWith:andMatchStatus:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardMatchingGame/copyCardContents</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardMatchingGame.m</DeclaredIn>
+			
+			<Declaration>- (void)copyCardContents</Declaration>
+			
+			
+			<Anchor>//api/name/copyCardContents</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardMatchingGame/markCardsAsMatched</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardMatchingGame.m</DeclaredIn>
+			
+			<Declaration>- (void)markCardsAsMatched</Declaration>
+			
+			
+			<Anchor>//api/name/markCardsAsMatched</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardMatchingGame/markCardsAsNotChosen</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardMatchingGame.m</DeclaredIn>
+			
+			<Declaration>- (void)markCardsAsNotChosen</Declaration>
+			
+			
+			<Anchor>//api/name/markCardsAsNotChosen</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardMatchingGame/setCards:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardMatchingGame.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *cards</Declaration>
+			
+			
+			<Anchor>//api/name/cards</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardMatchingGame/cards</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardMatchingGame.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *cards</Declaration>
+			
+			
+			<Anchor>//api/name/cards</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CardMatchingGame/cards</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardMatchingGame.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *cards</Declaration>
+			
+			
+			<Anchor>//api/name/cards</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardMatchingGame/setCardsToBeMatched:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardMatchingGame.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *cardsToBeMatched</Declaration>
+			
+			
+			<Anchor>//api/name/cardsToBeMatched</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardMatchingGame/cardsToBeMatched</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardMatchingGame.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *cardsToBeMatched</Declaration>
+			
+			
+			<Anchor>//api/name/cardsToBeMatched</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CardMatchingGame/cardsToBeMatched</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardMatchingGame.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *cardsToBeMatched</Declaration>
+			
+			
+			<Anchor>//api/name/cardsToBeMatched</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

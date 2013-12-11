@@ -13,11 +13,19 @@
 @property (nonatomic, strong) Deck *deck;
 @property (nonatomic, strong) CardMatchingGame *game;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+@property (weak, nonatomic) IBOutlet UILabel *gameStatusLabel;
 @property (nonatomic,strong) IBOutletCollection(UIButton) NSArray *cardButtons;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *gameModeController;
+@property (nonatomic, strong) NSMutableArray *gameplayHistory;
 @end
 
 @implementation CardGameViewController
+
+-(NSMutableArray *)gameplayHistory{
+    if(_gameplayHistory)_gameplayHistory = [[NSMutableArray alloc]init];
+    return _gameplayHistory;
+}
+
 
 -(CardMatchingGame *)game{
     if(!_game) _game = [[CardMatchingGame alloc] initWithCardCount:[self.cardButtons count]
@@ -32,8 +40,6 @@
     return [[PlayingCardDeck alloc] init];
 }
 
-
-
 - (IBAction)touchCardButton:(UIButton*)sender {
     if(self.game.gameMode){
         int cardButtonIndex = [self.cardButtons indexOfObject:sender];
@@ -41,7 +47,7 @@
         [self updateUI];
         [self gameModeControllerEnabled:NO];
     }else{
-        self.scoreLabel.text = [NSString stringWithFormat:@"Please select the game mode"];
+        self.gameStatusLabel.text = [NSString stringWithFormat:@"Please select the game mode"];
         return;
     }
 }
@@ -55,8 +61,30 @@
         [cardButton setBackgroundImage:[self backgroundImageForCard:card]
                               forState:UIControlStateNormal];
         cardButton.enabled = !card.isMatched;
-        self.scoreLabel.text = [NSString stringWithFormat:@"Matched J♥ J♠ for 4 points Score  %d",self.game.score];
+        self.scoreLabel.text = [NSString stringWithFormat:@"Score  %d",self.game.score];
+        [self updateGameStatusLabel];
     }
+}
+
+-(void) updateGameStatusLabel{
+    if(self.game.currentMatchState == matchNotCheckedyet){
+        [self generateMessage:@"selected"];
+    }else if(self.game.currentMatchState == matchSuccess){
+        [self generateMessage:@"Match succeded 4 points "];
+    }else if (self.game.currentMatchState == matchFailed){
+        [self generateMessage:@"Match failed penalty 2 points "];
+    }
+}
+
+
+-(void) generateMessage:(NSString *)message{
+    NSString *status = @"The card ";
+    for(NSString *contents in self.game.contentsOfcardsInvolved){
+        status = [status stringByAppendingString:[NSString stringWithFormat:@" %@ ",contents]];
+    }
+    status = [status stringByAppendingString:message];
+    self.gameStatusLabel.text = status;
+    [self.gameplayHistory addObject:status];    //EXTRA_CREDIT
 }
 
 -(void) gameModeControllerEnabled:(BOOL)state{

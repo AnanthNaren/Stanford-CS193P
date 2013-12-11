@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CardGameViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CardGameViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/gameplayHistory</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (NSMutableArray *)gameplayHistory</Declaration>
+			
+			
+			<Anchor>//api/name/gameplayHistory</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/game</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (CardMatchingGame *)game</Declaration>
+			
+			
+			<Anchor>//api/name/game</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/deck</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (Deck *)deck</Declaration>
+			
+			
+			<Anchor>//api/name/deck</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/createDeck</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (Deck *)createDeck</Declaration>
+			
+			
+			<Anchor>//api/name/createDeck</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/touchCardButton:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (IBAction)touchCardButton:(UIButton *)sender</Declaration>
+			
+			
+			<Anchor>//api/name/touchCardButton:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/updateUI</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)updateUI</Declaration>
+			
+			
+			<Anchor>//api/name/updateUI</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/updateGameStatusLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)updateGameStatusLabel</Declaration>
+			
+			
+			<Anchor>//api/name/updateGameStatusLabel</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/generateMessage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)generateMessage:(NSString *)message</Declaration>
+			
+			
+			<Anchor>//api/name/generateMessage:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/gameModeControllerEnabled:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)gameModeControllerEnabled:(BOOL)state</Declaration>
+			
+			
+			<Anchor>//api/name/gameModeControllerEnabled:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/titleForCard:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)titleForCard:(Card *)card</Declaration>
+			
+			
+			<Anchor>//api/name/titleForCard:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/backgroundImageForCard:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (UIImage *)backgroundImageForCard:(Card *)card</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundImageForCard:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/dealButton:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (IBAction)dealButton:(UIButton *)sender</Declaration>
+			
+			
+			<Anchor>//api/name/dealButton:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/chooseMode:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (IBAction)chooseMode:(UISegmentedControl *)sender</Declaration>
+			
+			
+			<Anchor>//api/name/chooseMode:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/setDeck:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) Deck *deck</Declaration>
+			
+			
+			<Anchor>//api/name/deck</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/deck</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) Deck *deck</Declaration>
+			
+			
+			<Anchor>//api/name/deck</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CardGameViewController/deck</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) Deck *deck</Declaration>
+			
+			
+			<Anchor>//api/name/deck</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/setGame:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CardMatchingGame *game</Declaration>
+			
+			
+			<Anchor>//api/name/game</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/game</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CardMatchingGame *game</Declaration>
+			
+			
+			<Anchor>//api/name/game</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CardGameViewController/game</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CardMatchingGame *game</Declaration>
+			
+			
+			<Anchor>//api/name/game</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/setScoreLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *scoreLabel</Declaration>
+			
+			
+			<Anchor>//api/name/scoreLabel</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/scoreLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *scoreLabel</Declaration>
+			
+			
+			<Anchor>//api/name/scoreLabel</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CardGameViewController/scoreLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *scoreLabel</Declaration>
+			
+			
+			<Anchor>//api/name/scoreLabel</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/setGameStatusLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *gameStatusLabel</Declaration>
+			
+			
+			<Anchor>//api/name/gameStatusLabel</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/gameStatusLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *gameStatusLabel</Declaration>
+			
+			
+			<Anchor>//api/name/gameStatusLabel</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CardGameViewController/gameStatusLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *gameStatusLabel</Declaration>
+			
+			
+			<Anchor>//api/name/gameStatusLabel</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/setCardButtons:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutletCollection ( UIButton ) NSArray *cardButtons</Declaration>
+			
+			
+			<Anchor>//api/name/cardButtons</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/cardButtons</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutletCollection ( UIButton ) NSArray *cardButtons</Declaration>
+			
+			
+			<Anchor>//api/name/cardButtons</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CardGameViewController/cardButtons</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutletCollection ( UIButton ) NSArray *cardButtons</Declaration>
+			
+			
+			<Anchor>//api/name/cardButtons</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/setGameModeController:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UISegmentedControl *gameModeController</Declaration>
+			
+			
+			<Anchor>//api/name/gameModeController</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/gameModeController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UISegmentedControl *gameModeController</Declaration>
+			
+			
+			<Anchor>//api/name/gameModeController</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CardGameViewController/gameModeController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UISegmentedControl *gameModeController</Declaration>
+			
+			
+			<Anchor>//api/name/gameModeController</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/setGameplayHistory:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *gameplayHistory</Declaration>
+			
+			
+			<Anchor>//api/name/gameplayHistory</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/gameplayHistory</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *gameplayHistory</Declaration>
+			
+			
+			<Anchor>//api/name/gameplayHistory</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CardGameViewController/gameplayHistory</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *gameplayHistory</Declaration>
+			
+			
+			<Anchor>//api/name/gameplayHistory</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

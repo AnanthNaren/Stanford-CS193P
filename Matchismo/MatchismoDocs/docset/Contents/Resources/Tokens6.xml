@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PlayingCard.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PlayingCard</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PlayingCard.h</DeclaredIn>
+            
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PlayingCard/setSuit:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PlayingCard.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *suit</Declaration>
+			
+			
+			<Anchor>//api/name/suit</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PlayingCard/suit</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PlayingCard.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *suit</Declaration>
+			
+			
+			<Anchor>//api/name/suit</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PlayingCard/suit</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PlayingCard.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *suit</Declaration>
+			
+			
+			<Anchor>//api/name/suit</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PlayingCard/setRank:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PlayingCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSUInteger rank</Declaration>
+			
+			
+			<Anchor>//api/name/rank</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PlayingCard/rank</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PlayingCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSUInteger rank</Declaration>
+			
+			
+			<Anchor>//api/name/rank</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PlayingCard/rank</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PlayingCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSUInteger rank</Declaration>
+			
+			
+			<Anchor>//api/name/rank</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PlayingCard/validSuits</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PlayingCard.h</DeclaredIn>
+			
+			<Declaration>+ (NSArray *)validSuits</Declaration>
+			
+			
+			<Anchor>//api/name/validSuits</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PlayingCard/maxRank</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PlayingCard.h</DeclaredIn>
+			
+			<Declaration>+ (NSUInteger)maxRank</Declaration>
+			
+			
+			<Anchor>//api/name/maxRank</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PlayingCard/match:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PlayingCard.m</DeclaredIn>
+			
+			<Declaration>- (int)match:(NSArray *)Cards</Declaration>
+			
+			
+			<Anchor>//api/name/match:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PlayingCard/match:With:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PlayingCard.m</DeclaredIn>
+			
+			<Declaration>- (int)match:(PlayingCard *)cardA With:(PlayingCard *)cardB</Declaration>
+			
+			
+			<Anchor>//api/name/match:With:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PlayingCard/contents</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PlayingCard.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)contents</Declaration>
+			
+			
+			<Anchor>//api/name/contents</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PlayingCard/rankStrings</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PlayingCard.m</DeclaredIn>
+			
+			<Declaration>+ (NSArray *)rankStrings</Declaration>
+			
+			
+			<Anchor>//api/name/rankStrings</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

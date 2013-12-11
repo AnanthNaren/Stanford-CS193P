@@ -1,0 +1,626 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CardMatchingGame Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Matchismo </a></h1>
+				<a id="developerHome" href="../index.html">AravinthChandran</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CardMatchingGame Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/cards">&nbsp;&nbsp;&nbsp;&nbsp;cards</option>
+	
+	<option value="//api/name/cardsToBeMatched">&nbsp;&nbsp;&nbsp;&nbsp;cardsToBeMatched</option>
+	
+	<option value="//api/name/contentsOfcardsInvolved">&nbsp;&nbsp;&nbsp;&nbsp;contentsOfcardsInvolved</option>
+	
+	<option value="//api/name/currentMatchState">&nbsp;&nbsp;&nbsp;&nbsp;currentMatchState</option>
+	
+	<option value="//api/name/gameMode">&nbsp;&nbsp;&nbsp;&nbsp;gameMode</option>
+	
+	<option value="//api/name/score">&nbsp;&nbsp;&nbsp;&nbsp;score</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/cardAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- cardAtIndex:</option>
+	
+	<option value="//api/name/cards">&nbsp;&nbsp;&nbsp;&nbsp;- cards</option>
+	
+	<option value="//api/name/cardsToBeMatched">&nbsp;&nbsp;&nbsp;&nbsp;- cardsToBeMatched</option>
+	
+	<option value="//api/name/chooseCardAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- chooseCardAtIndex:</option>
+	
+	<option value="//api/name/copyCardContents">&nbsp;&nbsp;&nbsp;&nbsp;- copyCardContents</option>
+	
+	<option value="//api/name/initWithCardCount:usingDeck:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithCardCount:usingDeck:</option>
+	
+	<option value="//api/name/loadCurrentGameStateWith:andMatchStatus:">&nbsp;&nbsp;&nbsp;&nbsp;- loadCurrentGameStateWith:andMatchStatus:</option>
+	
+	<option value="//api/name/markCardsAsMatched">&nbsp;&nbsp;&nbsp;&nbsp;- markCardsAsMatched</option>
+	
+	<option value="//api/name/markCardsAsNotChosen">&nbsp;&nbsp;&nbsp;&nbsp;- markCardsAsNotChosen</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Extension Methods">Extension Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cards">cards</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cardsToBeMatched">cardsToBeMatched</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contentsOfcardsInvolved">contentsOfcardsInvolved</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/currentMatchState">currentMatchState</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/gameMode">gameMode</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/score">score</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cardAtIndex:">cardAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cards">cards</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cardsToBeMatched">cardsToBeMatched</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/chooseCardAtIndex:">chooseCardAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/copyCardContents">copyCardContents</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithCardCount:usingDeck:">initWithCardCount:usingDeck:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadCurrentGameStateWith:andMatchStatus:">loadCurrentGameStateWith:andMatchStatus:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/markCardsAsMatched">markCardsAsMatched</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/markCardsAsNotChosen">markCardsAsNotChosen</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CardMatchingGame Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CardMatchingGame Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CardMatchingGame.h<br />CardMatchingGame.m</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithCardCount:usingDeck:">&ndash;&nbsp;initWithCardCount:usingDeck:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cardAtIndex:">&ndash;&nbsp;cardAtIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/chooseCardAtIndex:">&ndash;&nbsp;chooseCardAtIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/score">&nbsp;&nbsp;score</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/gameMode">&nbsp;&nbsp;gameMode</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/contentsOfcardsInvolved">&nbsp;&nbsp;contentsOfcardsInvolved</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/currentMatchState">&nbsp;&nbsp;currentMatchState</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cardsToBeMatched">&ndash;&nbsp;cardsToBeMatched</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cards">&ndash;&nbsp;cards</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadCurrentGameStateWith:andMatchStatus:">&ndash;&nbsp;loadCurrentGameStateWith:andMatchStatus:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/copyCardContents">&ndash;&nbsp;copyCardContents</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/markCardsAsMatched">&ndash;&nbsp;markCardsAsMatched</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/markCardsAsNotChosen">&ndash;&nbsp;markCardsAsNotChosen</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h3 class="subsubtitle task-title">Extension Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cards">&nbsp;&nbsp;cards</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cardsToBeMatched">&nbsp;&nbsp;cardsToBeMatched</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/cards" title="cards"></a>
+	<h3 class="subsubtitle method-title">cards</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSMutableArray *cards</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/cardsToBeMatched" title="cardsToBeMatched"></a>
+	<h3 class="subsubtitle method-title">cardsToBeMatched</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSMutableArray *cardsToBeMatched</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/contentsOfcardsInvolved" title="contentsOfcardsInvolved"></a>
+	<h3 class="subsubtitle method-title">contentsOfcardsInvolved</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stores the current state of the card matching game.
+It has a NSNumber object at the 0th index, which represents the
+current matching state, NotCheckedYet -0 , MatchSuccess -1, MatchFailed -2
+which is then followed by array of <a href="#//api/name/cards">cards</a> involved on that match.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSMutableArray *contentsOfcardsInvolved</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>gameState Array</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CardMatchingGame.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/currentMatchState" title="currentMatchState"></a>
+	<h3 class="subsubtitle method-title">currentMatchState</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) matchState currentMatchState</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/gameMode" title="gameMode"></a>
+	<h3 class="subsubtitle method-title">gameMode</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) NSInteger gameMode</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/score" title="score"></a>
+	<h3 class="subsubtitle method-title">score</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSInteger score</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/cardAtIndex:" title="cardAtIndex:"></a>
+	<h3 class="subsubtitle method-title">cardAtIndex:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (Card *)cardAtIndex:(NSUInteger)<em>index</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/cards" title="cards"></a>
+	<h3 class="subsubtitle method-title">cards</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSMutableArray *)cards</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/cardsToBeMatched" title="cardsToBeMatched"></a>
+	<h3 class="subsubtitle method-title">cardsToBeMatched</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSMutableArray *)cardsToBeMatched</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/chooseCardAtIndex:" title="chooseCardAtIndex:"></a>
+	<h3 class="subsubtitle method-title">chooseCardAtIndex:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)chooseCardAtIndex:(NSUInteger)<em>index</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/copyCardContents" title="copyCardContents"></a>
+	<h3 class="subsubtitle method-title">copyCardContents</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)copyCardContents</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithCardCount:usingDeck:" title="initWithCardCount:usingDeck:"></a>
+	<h3 class="subsubtitle method-title">initWithCardCount:usingDeck:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (instancetype)initWithCardCount:(NSUInteger)<em>count</em> usingDeck:(Deck *)<em>deck</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadCurrentGameStateWith:andMatchStatus:" title="loadCurrentGameStateWith:andMatchStatus:"></a>
+	<h3 class="subsubtitle method-title">loadCurrentGameStateWith:andMatchStatus:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)loadCurrentGameStateWith:(NSMutableArray *)<em>cards</em> andMatchStatus:(int)<em>state</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/markCardsAsMatched" title="markCardsAsMatched"></a>
+	<h3 class="subsubtitle method-title">markCardsAsMatched</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)markCardsAsMatched</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/markCardsAsNotChosen" title="markCardsAsNotChosen"></a>
+	<h3 class="subsubtitle method-title">markCardsAsNotChosen</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)markCardsAsNotChosen</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 AravinthChandran. All rights reserved. (Last updated: 2013-12-11)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

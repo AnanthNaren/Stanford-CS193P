@@ -11,12 +11,26 @@
 
 @interface CardMatchingGame : NSObject
 
+//Card Matching Game States
+typedef enum {
+    matchNotCheckedyet,
+    matchSuccess,
+    matchFailed,
+} matchState;
+
 //Designated Initializer
 -(instancetype)initWithCardCount:(NSUInteger)count
                        usingDeck:(Deck *)deck;
--(void)chooseCardAtIndex:(NSUInteger)index;
+
+//Instance Methods
 -(Card *)cardAtIndex:(NSUInteger)index;
+-(void)chooseCardAtIndex:(NSUInteger)index;
+
+//Property
 @property(nonatomic, readonly) NSInteger score;
 @property (nonatomic) NSInteger gameMode;
+@property (nonatomic, strong, readonly) NSMutableArray* contentsOfcardsInvolved;
+@property (nonatomic) matchState currentMatchState;
+
 
 @end

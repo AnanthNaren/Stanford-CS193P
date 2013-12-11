@@ -1,0 +1,690 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CardGameViewController Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Matchismo </a></h1>
+				<a id="developerHome" href="../index.html">AravinthChandran</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CardGameViewController Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/cardButtons">&nbsp;&nbsp;&nbsp;&nbsp;cardButtons</option>
+	
+	<option value="//api/name/deck">&nbsp;&nbsp;&nbsp;&nbsp;deck</option>
+	
+	<option value="//api/name/game">&nbsp;&nbsp;&nbsp;&nbsp;game</option>
+	
+	<option value="//api/name/gameModeController">&nbsp;&nbsp;&nbsp;&nbsp;gameModeController</option>
+	
+	<option value="//api/name/gameStatusLabel">&nbsp;&nbsp;&nbsp;&nbsp;gameStatusLabel</option>
+	
+	<option value="//api/name/gameplayHistory">&nbsp;&nbsp;&nbsp;&nbsp;gameplayHistory</option>
+	
+	<option value="//api/name/scoreLabel">&nbsp;&nbsp;&nbsp;&nbsp;scoreLabel</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/backgroundImageForCard:">&nbsp;&nbsp;&nbsp;&nbsp;- backgroundImageForCard:</option>
+	
+	<option value="//api/name/chooseMode:">&nbsp;&nbsp;&nbsp;&nbsp;- chooseMode:</option>
+	
+	<option value="//api/name/createDeck">&nbsp;&nbsp;&nbsp;&nbsp;- createDeck</option>
+	
+	<option value="//api/name/dealButton:">&nbsp;&nbsp;&nbsp;&nbsp;- dealButton:</option>
+	
+	<option value="//api/name/deck">&nbsp;&nbsp;&nbsp;&nbsp;- deck</option>
+	
+	<option value="//api/name/game">&nbsp;&nbsp;&nbsp;&nbsp;- game</option>
+	
+	<option value="//api/name/gameModeControllerEnabled:">&nbsp;&nbsp;&nbsp;&nbsp;- gameModeControllerEnabled:</option>
+	
+	<option value="//api/name/gameplayHistory">&nbsp;&nbsp;&nbsp;&nbsp;- gameplayHistory</option>
+	
+	<option value="//api/name/generateMessage:">&nbsp;&nbsp;&nbsp;&nbsp;- generateMessage:</option>
+	
+	<option value="//api/name/titleForCard:">&nbsp;&nbsp;&nbsp;&nbsp;- titleForCard:</option>
+	
+	<option value="//api/name/touchCardButton:">&nbsp;&nbsp;&nbsp;&nbsp;- touchCardButton:</option>
+	
+	<option value="//api/name/updateGameStatusLabel">&nbsp;&nbsp;&nbsp;&nbsp;- updateGameStatusLabel</option>
+	
+	<option value="//api/name/updateUI">&nbsp;&nbsp;&nbsp;&nbsp;- updateUI</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Extension Methods">Extension Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cardButtons">cardButtons</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deck">deck</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/game">game</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/gameModeController">gameModeController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/gameStatusLabel">gameStatusLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/gameplayHistory">gameplayHistory</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/scoreLabel">scoreLabel</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/backgroundImageForCard:">backgroundImageForCard:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/chooseMode:">chooseMode:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createDeck">createDeck</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dealButton:">dealButton:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deck">deck</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/game">game</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/gameModeControllerEnabled:">gameModeControllerEnabled:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/gameplayHistory">gameplayHistory</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/generateMessage:">generateMessage:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/titleForCard:">titleForCard:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/touchCardButton:">touchCardButton:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateGameStatusLabel">updateGameStatusLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateUI">updateUI</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CardGameViewController Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CardGameViewController Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">UIViewController</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CardGameViewController.h<br />CardGameViewController.m</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/gameplayHistory">&ndash;&nbsp;gameplayHistory</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/game">&ndash;&nbsp;game</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deck">&ndash;&nbsp;deck</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createDeck">&ndash;&nbsp;createDeck</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/touchCardButton:">&ndash;&nbsp;touchCardButton:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateUI">&ndash;&nbsp;updateUI</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateGameStatusLabel">&ndash;&nbsp;updateGameStatusLabel</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/generateMessage:">&ndash;&nbsp;generateMessage:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/gameModeControllerEnabled:">&ndash;&nbsp;gameModeControllerEnabled:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/titleForCard:">&ndash;&nbsp;titleForCard:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/backgroundImageForCard:">&ndash;&nbsp;backgroundImageForCard:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dealButton:">&ndash;&nbsp;dealButton:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/chooseMode:">&ndash;&nbsp;chooseMode:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h3 class="subsubtitle task-title">Extension Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deck">&nbsp;&nbsp;deck</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/game">&nbsp;&nbsp;game</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/scoreLabel">&nbsp;&nbsp;scoreLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/gameStatusLabel">&nbsp;&nbsp;gameStatusLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cardButtons">&nbsp;&nbsp;cardButtons</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/gameModeController">&nbsp;&nbsp;gameModeController</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/gameplayHistory">&nbsp;&nbsp;gameplayHistory</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/cardButtons" title="cardButtons"></a>
+	<h3 class="subsubtitle method-title">cardButtons</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) IBOutletCollection ( UIButton ) NSArray *cardButtons</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deck" title="deck"></a>
+	<h3 class="subsubtitle method-title">deck</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) Deck *deck</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/game" title="game"></a>
+	<h3 class="subsubtitle method-title">game</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) CardMatchingGame *game</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/gameModeController" title="gameModeController"></a>
+	<h3 class="subsubtitle method-title">gameModeController</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UISegmentedControl *gameModeController</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/gameStatusLabel" title="gameStatusLabel"></a>
+	<h3 class="subsubtitle method-title">gameStatusLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *gameStatusLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/gameplayHistory" title="gameplayHistory"></a>
+	<h3 class="subsubtitle method-title">gameplayHistory</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSMutableArray *gameplayHistory</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/scoreLabel" title="scoreLabel"></a>
+	<h3 class="subsubtitle method-title">scoreLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *scoreLabel</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/backgroundImageForCard:" title="backgroundImageForCard:"></a>
+	<h3 class="subsubtitle method-title">backgroundImageForCard:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (UIImage *)backgroundImageForCard:(Card *)<em>card</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/chooseMode:" title="chooseMode:"></a>
+	<h3 class="subsubtitle method-title">chooseMode:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)chooseMode:(UISegmentedControl *)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createDeck" title="createDeck"></a>
+	<h3 class="subsubtitle method-title">createDeck</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (Deck *)createDeck</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dealButton:" title="dealButton:"></a>
+	<h3 class="subsubtitle method-title">dealButton:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)dealButton:(UIButton *)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deck" title="deck"></a>
+	<h3 class="subsubtitle method-title">deck</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (Deck *)deck</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/game" title="game"></a>
+	<h3 class="subsubtitle method-title">game</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (CardMatchingGame *)game</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/gameModeControllerEnabled:" title="gameModeControllerEnabled:"></a>
+	<h3 class="subsubtitle method-title">gameModeControllerEnabled:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)gameModeControllerEnabled:(BOOL)<em>state</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/gameplayHistory" title="gameplayHistory"></a>
+	<h3 class="subsubtitle method-title">gameplayHistory</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSMutableArray *)gameplayHistory</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/generateMessage:" title="generateMessage:"></a>
+	<h3 class="subsubtitle method-title">generateMessage:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)generateMessage:(NSString *)<em>message</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/titleForCard:" title="titleForCard:"></a>
+	<h3 class="subsubtitle method-title">titleForCard:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)titleForCard:(Card *)<em>card</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/touchCardButton:" title="touchCardButton:"></a>
+	<h3 class="subsubtitle method-title">touchCardButton:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)touchCardButton:(UIButton *)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateGameStatusLabel" title="updateGameStatusLabel"></a>
+	<h3 class="subsubtitle method-title">updateGameStatusLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)updateGameStatusLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateUI" title="updateUI"></a>
+	<h3 class="subsubtitle method-title">updateUI</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)updateUI</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 AravinthChandran. All rights reserved. (Last updated: 2013-12-11)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

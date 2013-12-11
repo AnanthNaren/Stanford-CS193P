@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/Deck.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/Deck</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Deck.h</DeclaredIn>
+            
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Deck/addCard:atTop:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Deck.h</DeclaredIn>
+			
+			<Declaration>- (void)addCard:(Card *)card atTop:(BOOL)atTop</Declaration>
+			
+			
+			<Anchor>//api/name/addCard:atTop:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Deck/addCard:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Deck.h</DeclaredIn>
+			
+			<Declaration>- (void)addCard:(Card *)card</Declaration>
+			
+			
+			<Anchor>//api/name/addCard:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Deck/drawRandomCard</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Deck.h</DeclaredIn>
+			
+			<Declaration>- (Card *)drawRandomCard</Declaration>
+			
+			
+			<Anchor>//api/name/drawRandomCard</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Deck/cards</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Deck.m</DeclaredIn>
+			
+			<Declaration>- (NSMutableArray *)cards</Declaration>
+			
+			
+			<Anchor>//api/name/cards</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Deck/setCards:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Deck.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSMutableArray *cards</Declaration>
+			
+			
+			<Anchor>//api/name/cards</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Deck/cards</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Deck.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSMutableArray *cards</Declaration>
+			
+			
+			<Anchor>//api/name/cards</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Deck/cards</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Deck.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSMutableArray *cards</Declaration>
+			
+			
+			<Anchor>//api/name/cards</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

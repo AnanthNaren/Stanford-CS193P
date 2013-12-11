@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PlayingCardDeck.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PlayingCardDeck</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PlayingCardDeck.h</DeclaredIn>
+            
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PlayingCardDeck/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PlayingCardDeck.m</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>
