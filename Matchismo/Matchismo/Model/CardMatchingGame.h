@@ -29,8 +29,7 @@ typedef enum {
 //Property
 @property(nonatomic, readonly) NSInteger score;
 @property (nonatomic) NSInteger gameMode;
-@property (nonatomic, strong, readonly) NSMutableArray* contentsOfcardsInvolved;
 @property (nonatomic) matchState currentMatchState;
-
+@property (nonatomic, strong, readonly) NSMutableArray* cardsInvolved;
 
 @end

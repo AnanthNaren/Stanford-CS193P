@@ -13,7 +13,7 @@
 @property (nonatomic, readwrite) NSInteger score;
 @property (nonatomic, strong) NSMutableArray* cards;
 @property (nonatomic, strong) NSMutableArray* cardsToBeMatched;
-@property (nonatomic, strong, readwrite) NSMutableArray* contentsOfcardsInvolved;
+@property (nonatomic, strong, readwrite) NSMutableArray* cardsInvolved;
 
 @end
 
@@ -31,16 +31,14 @@
  *  which is then followed by array of cards involved on that match.
  *  @return gameState Array
  */
--(NSMutableArray *)contentsOfcardsInvolved{
-    if(!_contentsOfcardsInvolved)_contentsOfcardsInvolved = [[NSMutableArray alloc] init];
-    return _contentsOfcardsInvolved;
+-(NSMutableArray *)cardsInvolved{
+    if(!_cardsInvolved)_cardsInvolved = [[NSMutableArray alloc] init];
+    return _cardsInvolved;
 }
-
 -(NSMutableArray *)cards{
     if(!_cards) _cards = [[NSMutableArray alloc] init];
     return _cards;
 }
-
 -(instancetype)initWithCardCount:(NSUInteger)count usingDeck:(Deck *)deck{
     self = [super init]; //superclass designated initializer
     if(self){
@@ -57,12 +55,16 @@
     }    
     return self;
 }
-
-
 -(Card *)cardAtIndex:(NSUInteger)index{
     return (index < [self.cards count]) ? self.cards[index] : nil;
 }
 
+
+
+
+/**
+ *  Main Logic of the game
+ */
 static const int MATCH_BONUS = 4;
 static const int MISMATCH_PENALTY = 2;
 static const int COST_TO_CHOOSE = 1;
@@ -70,27 +72,28 @@ static const int COST_TO_CHOOSE = 1;
 //Card Matching Game Logic
 -(void)chooseCardAtIndex:(NSUInteger)index{
     Card *card = [self cardAtIndex:index];
+    if(self.currentMatchState != matchNotCheckedyet) [self.cardsInvolved removeAllObjects];
     if(!card.isMatched){
         if(card.isChosen){
             card.chosen = NO;
             [self.cardsToBeMatched removeObject:card];
+            [self.cardsInvolved removeObject:card];//
             self.score -= COST_TO_CHOOSE;
-            [self.contentsOfcardsInvolved removeAllObjects];
         }else{
             card.chosen = YES;
+            [self.cardsInvolved addObject:card];//
+            self.currentMatchState = matchNotCheckedyet;//
             [self.cardsToBeMatched addObject:card];
-            [self loadCurrentGameStateWith:self.cardsToBeMatched andMatchStatus:matchNotCheckedyet];
             if([self.cardsToBeMatched count] == self.gameMode){
                 int matchScore = [card match:self.cardsToBeMatched];
-                [self.contentsOfcardsInvolved removeAllObjects];
                 if(matchScore){
-                    [self loadCurrentGameStateWith:self.cardsToBeMatched andMatchStatus:matchSuccess];
+                    self.currentMatchState = matchSuccess;//
                     [self markCardsAsMatched];
                     [self.cardsToBeMatched removeAllObjects];
                     self.score += matchScore * MATCH_BONUS;
                 }else{
+                    self.currentMatchState = matchFailed;//
                     // Will change the logic after using animation
-                    [self loadCurrentGameStateWith:self.cardsToBeMatched andMatchStatus:matchFailed];
                     [self.cardsToBeMatched removeLastObject];
                     [self markCardsAsNotChosen];
                     [self.cardsToBeMatched removeAllObjects];
@@ -103,26 +106,11 @@ static const int COST_TO_CHOOSE = 1;
 }
 
 
--(void)loadCurrentGameStateWith:(NSMutableArray *)cards andMatchStatus:(int)state{
-    self.currentMatchState = state;
-    if(cards){
-        [self copyCardContents];
-    }
-    
-}
-
--(void)copyCardContents{
-    for (Card* card in self.cardsToBeMatched) {
-        [self.contentsOfcardsInvolved addObject:card.contents];
-    }
-}
-
 -(void) markCardsAsMatched{
     for(Card* card in self.cardsToBeMatched){
         card.matched = YES;
     }
 }
-
 -(void) markCardsAsNotChosen{
     for(Card* card in self.cardsToBeMatched){
         card.chosen = NO;

@@ -39,9 +39,9 @@
 	
 	<option value="//api/name/cards">&nbsp;&nbsp;&nbsp;&nbsp;cards</option>
 	
-	<option value="//api/name/cardsToBeMatched">&nbsp;&nbsp;&nbsp;&nbsp;cardsToBeMatched</option>
+	<option value="//api/name/cardsInvolved">&nbsp;&nbsp;&nbsp;&nbsp;cardsInvolved</option>
 	
-	<option value="//api/name/contentsOfcardsInvolved">&nbsp;&nbsp;&nbsp;&nbsp;contentsOfcardsInvolved</option>
+	<option value="//api/name/cardsToBeMatched">&nbsp;&nbsp;&nbsp;&nbsp;cardsToBeMatched</option>
 	
 	<option value="//api/name/currentMatchState">&nbsp;&nbsp;&nbsp;&nbsp;currentMatchState</option>
 	
@@ -64,11 +64,7 @@
 	
 	<option value="//api/name/chooseCardAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- chooseCardAtIndex:</option>
 	
-	<option value="//api/name/copyCardContents">&nbsp;&nbsp;&nbsp;&nbsp;- copyCardContents</option>
-	
 	<option value="//api/name/initWithCardCount:usingDeck:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithCardCount:usingDeck:</option>
-	
-	<option value="//api/name/loadCurrentGameStateWith:andMatchStatus:">&nbsp;&nbsp;&nbsp;&nbsp;- loadCurrentGameStateWith:andMatchStatus:</option>
 	
 	<option value="//api/name/markCardsAsMatched">&nbsp;&nbsp;&nbsp;&nbsp;- markCardsAsMatched</option>
 	
@@ -100,9 +96,9 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cards">cards</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cardsToBeMatched">cardsToBeMatched</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cardsInvolved">cardsInvolved</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contentsOfcardsInvolved">contentsOfcardsInvolved</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cardsToBeMatched">cardsToBeMatched</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/currentMatchState">currentMatchState</a></span></li>
 	
@@ -126,11 +122,7 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/chooseCardAtIndex:">chooseCardAtIndex:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/copyCardContents">copyCardContents</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithCardCount:usingDeck:">initWithCardCount:usingDeck:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadCurrentGameStateWith:andMatchStatus:">loadCurrentGameStateWith:andMatchStatus:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/markCardsAsMatched">markCardsAsMatched</a></span></li>
 	
@@ -213,13 +205,13 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/contentsOfcardsInvolved">&nbsp;&nbsp;contentsOfcardsInvolved</a></code>
+		<code><a href="#//api/name/currentMatchState">&nbsp;&nbsp;currentMatchState</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/currentMatchState">&nbsp;&nbsp;currentMatchState</a></code>
+		<code><a href="#//api/name/cardsInvolved">&nbsp;&nbsp;cardsInvolved</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -240,18 +232,6 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/cards">&ndash;&nbsp;cards</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/loadCurrentGameStateWith:andMatchStatus:">&ndash;&nbsp;loadCurrentGameStateWith:andMatchStatus:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/copyCardContents">&ndash;&nbsp;copyCardContents</a></code>
 	</span>
 	
 	
@@ -312,19 +292,8 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/cardsToBeMatched" title="cardsToBeMatched"></a>
-	<h3 class="subsubtitle method-title">cardsToBeMatched</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSMutableArray *cardsToBeMatched</code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/contentsOfcardsInvolved" title="contentsOfcardsInvolved"></a>
-	<h3 class="subsubtitle method-title">contentsOfcardsInvolved</h3>
+	<a name="//api/name/cardsInvolved" title="cardsInvolved"></a>
+	<h3 class="subsubtitle method-title">cardsInvolved</h3>
 	
 	
 	
@@ -337,7 +306,7 @@ which is then followed by array of <a href="#//api/name/cards">cards</a> involve
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSMutableArray *contentsOfcardsInvolved</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSMutableArray *cardsInvolved</code></div>
 
     
 	
@@ -364,6 +333,17 @@ which is then followed by array of <a href="#//api/name/cards">cards</a> involve
 	</div>				
 	
 	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/cardsToBeMatched" title="cardsToBeMatched"></a>
+	<h3 class="subsubtitle method-title">cardsToBeMatched</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSMutableArray *cardsToBeMatched</code></div>
+
+    
 </div>
 						
 						<div class="section-method">
@@ -447,21 +427,35 @@ which is then followed by array of <a href="#//api/name/cards">cards</a> involve
 	<h3 class="subsubtitle method-title">chooseCardAtIndex:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Main Logic of the game</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)chooseCardAtIndex:(NSUInteger)<em>index</em></code></div>
 
     
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/copyCardContents" title="copyCardContents"></a>
-	<h3 class="subsubtitle method-title">copyCardContents</h3>
 	
 	
-
-	<div class="method-subsection method-declaration"><code>- (void)copyCardContents</code></div>
-
-    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CardMatchingGame.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -471,17 +465,6 @@ which is then followed by array of <a href="#//api/name/cards">cards</a> involve
 	
 
 	<div class="method-subsection method-declaration"><code>- (instancetype)initWithCardCount:(NSUInteger)<em>count</em> usingDeck:(Deck *)<em>deck</em></code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/loadCurrentGameStateWith:andMatchStatus:" title="loadCurrentGameStateWith:andMatchStatus:"></a>
-	<h3 class="subsubtitle method-title">loadCurrentGameStateWith:andMatchStatus:</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>- (void)loadCurrentGameStateWith:(NSMutableArray *)<em>cards</em> andMatchStatus:(int)<em>state</em></code></div>
 
     
 </div>
@@ -523,7 +506,7 @@ which is then followed by array of <a href="#//api/name/cards">cards</a> involve
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 AravinthChandran. All rights reserved. (Last updated: 2013-12-11)</span><br />
+						<p><span class="copyright">&copy; 2013 AravinthChandran. All rights reserved. (Last updated: 2013-12-12)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

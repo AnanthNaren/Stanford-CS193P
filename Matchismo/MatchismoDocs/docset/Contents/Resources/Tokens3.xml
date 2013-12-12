@@ -13,14 +13,14 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/gameplayHistory</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/gameHistory</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>CardGameViewController.m</DeclaredIn>
 			
-			<Declaration>- (NSMutableArray *)gameplayHistory</Declaration>
+			<Declaration>- (NSMutableArray *)gameHistory</Declaration>
 			
 			
-			<Anchor>//api/name/gameplayHistory</Anchor>
+			<Anchor>//api/name/gameHistory</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
@@ -61,6 +61,18 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/configureGameMode:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (IBAction)configureGameMode:(UISegmentedControl *)sender</Declaration>
+			
+			
+			<Anchor>//api/name/configureGameMode:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/touchCardButton:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>CardGameViewController.m</DeclaredIn>
@@ -69,6 +81,42 @@
 			
 			
 			<Anchor>//api/name/touchCardButton:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/historySlider:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (IBAction)historySlider:(UISlider *)sender</Declaration>
+			
+			
+			<Anchor>//api/name/historySlider:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/setHistorySlider</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)setHistorySlider</Declaration>
+			
+			
+			<Anchor>//api/name/setHistorySlider</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/gameModeControllerEnabled:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)gameModeControllerEnabled:(BOOL)state</Declaration>
+			
+			
+			<Anchor>//api/name/gameModeControllerEnabled:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
@@ -85,6 +133,18 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/updateCardButtonUI</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)updateCardButtonUI</Declaration>
+			
+			
+			<Anchor>//api/name/updateCardButtonUI</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/updateGameStatusLabel</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>CardGameViewController.m</DeclaredIn>
@@ -97,26 +157,38 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/generateMessage:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/updateHistorySlider</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>CardGameViewController.m</DeclaredIn>
 			
-			<Declaration>- (void)generateMessage:(NSString *)message</Declaration>
+			<Declaration>- (void)updateHistorySlider</Declaration>
 			
 			
-			<Anchor>//api/name/generateMessage:</Anchor>
+			<Anchor>//api/name/updateHistorySlider</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/gameModeControllerEnabled:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/displayStatusMessage:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>CardGameViewController.m</DeclaredIn>
 			
-			<Declaration>- (void)gameModeControllerEnabled:(BOOL)state</Declaration>
+			<Declaration>- (void)displayStatusMessage:(NSString *)message</Declaration>
 			
 			
-			<Anchor>//api/name/gameModeControllerEnabled:</Anchor>
+			<Anchor>//api/name/displayStatusMessage:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/generateMatchMessage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)generateMatchMessage:(NSString *)message</Declaration>
+			
+			
+			<Anchor>//api/name/generateMatchMessage:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
@@ -157,14 +229,26 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/chooseMode:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/resetHistorySlider</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>CardGameViewController.m</DeclaredIn>
 			
-			<Declaration>- (IBAction)chooseMode:(UISegmentedControl *)sender</Declaration>
+			<Declaration>- (void)resetHistorySlider</Declaration>
 			
 			
-			<Anchor>//api/name/chooseMode:</Anchor>
+			<Anchor>//api/name/resetHistorySlider</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/resetGameModeController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)resetGameModeController</Declaration>
+			
+			
+			<Anchor>//api/name/resetGameModeController</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
@@ -385,38 +469,110 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/setGameplayHistory:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/setGameHistorySlider:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>CardGameViewController.m</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSMutableArray *gameplayHistory</Declaration>
+			<Declaration>@property (weak, nonatomic) IBOutlet UISlider *gameHistorySlider</Declaration>
 			
 			
-			<Anchor>//api/name/gameplayHistory</Anchor>
+			<Anchor>//api/name/gameHistorySlider</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/gameplayHistory</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/gameHistorySlider</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>CardGameViewController.m</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSMutableArray *gameplayHistory</Declaration>
+			<Declaration>@property (weak, nonatomic) IBOutlet UISlider *gameHistorySlider</Declaration>
 			
 			
-			<Anchor>//api/name/gameplayHistory</Anchor>
+			<Anchor>//api/name/gameHistorySlider</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CardGameViewController/gameplayHistory</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/CardGameViewController/gameHistorySlider</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>CardGameViewController.m</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSMutableArray *gameplayHistory</Declaration>
+			<Declaration>@property (weak, nonatomic) IBOutlet UISlider *gameHistorySlider</Declaration>
 			
 			
-			<Anchor>//api/name/gameplayHistory</Anchor>
+			<Anchor>//api/name/gameHistorySlider</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/setGameHistory:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *gameHistory</Declaration>
+			
+			
+			<Anchor>//api/name/gameHistory</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/gameHistory</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *gameHistory</Declaration>
+			
+			
+			<Anchor>//api/name/gameHistory</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CardGameViewController/gameHistory</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *gameHistory</Declaration>
+			
+			
+			<Anchor>//api/name/gameHistory</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/setIsGameConfigured:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL isGameConfigured</Declaration>
+			
+			
+			<Anchor>//api/name/isGameConfigured</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/isGameConfigured</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL isGameConfigured</Declaration>
+			
+			
+			<Anchor>//api/name/isGameConfigured</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CardGameViewController/isGameConfigured</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL isGameConfigured</Declaration>
+			
+			
+			<Anchor>//api/name/isGameConfigured</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
