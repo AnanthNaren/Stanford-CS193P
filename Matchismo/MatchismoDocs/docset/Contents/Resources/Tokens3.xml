@@ -13,6 +13,18 @@
 		
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/createDeck</TokenIdentifier>
+			<Abstract type="html">protected for subclasses</Abstract>
+			<DeclaredIn>CardGameViewController.h</DeclaredIn>
+			
+			<Declaration>- (Deck *)createDeck</Declaration>
+			
+			<ReturnValue><Abstract type="html">Desired deck of card</Abstract></ReturnValue>
+			<Anchor>//api/name/createDeck</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/gameHistory</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>CardGameViewController.m</DeclaredIn>
@@ -45,18 +57,6 @@
 			
 			
 			<Anchor>//api/name/deck</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/createDeck</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CardGameViewController.m</DeclaredIn>
-			
-			<Declaration>- (Deck *)createDeck</Declaration>
-			
-			
-			<Anchor>//api/name/createDeck</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		

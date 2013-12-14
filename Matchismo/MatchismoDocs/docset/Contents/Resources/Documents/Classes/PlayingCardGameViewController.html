@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>PlayingCardDeck Class Reference</title>
+		<title>PlayingCardGameViewController Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
@@ -16,7 +16,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">PlayingCardDeck Class Reference</h1>
+				<h1 class="hideInXcode">PlayingCardGameViewController Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -41,7 +41,7 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/init">&nbsp;&nbsp;&nbsp;&nbsp;- init</option>
+	<option value="//api/name/createDeck">&nbsp;&nbsp;&nbsp;&nbsp;- createDeck</option>
 	
 	
 	
@@ -69,7 +69,7 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/init">init</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createDeck">createDeck</a></span></li>
 	
 </ul></li>
 
@@ -78,7 +78,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="PlayingCardDeck Class Reference" name="top"></a>
+				<a title="PlayingCardGameViewController Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -87,7 +87,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">PlayingCardDeck Class Reference</h1>
+						<h1 class="title title-header">PlayingCardGameViewController Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
@@ -95,10 +95,10 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Inherits from</td>
-	<td class="specification-value"><a href="../Classes/Deck.html">Deck</a> : NSObject</td>
+	<td class="specification-value"><a href="../Classes/CardGameViewController.html">CardGameViewController</a> : UIViewController</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">PlayingCardDeck.h<br />PlayingCardDeck.m</td>
+	<td class="specification-value">PlayingCardGameViewController.h<br />PlayingCardGameViewController.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -118,7 +118,7 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+		<code><a href="#//api/name/createDeck">&ndash;&nbsp;createDeck</a></code>
 	</span>
 	
 	
@@ -140,14 +140,44 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/init" title="init"></a>
-	<h3 class="subsubtitle method-title">init</h3>
+	<a name="//api/name/createDeck" title="createDeck"></a>
+	<h3 class="subsubtitle method-title">createDeck</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>protected for subclasses</p>
+	</div>		
+	
+    
 
-	<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
+	<div class="method-subsection method-declaration"><code>- (Deck *)createDeck</code></div>
 
     
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Desired <a href="#//api/name/deck">deck</a> of card</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CardGameViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 					</div>
