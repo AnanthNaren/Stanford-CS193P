@@ -13,9 +13,9 @@
 
 //Card Matching Game States
 typedef enum {
-    matchNotCheckedyet,
-    matchSuccess,
-    matchFailed,
+    MATCH_NOT_CHECKED_YET,
+    MATCH_SUCCESS,
+    MATCH_FAILED,
 } matchState;
 
 //Designated Initializer

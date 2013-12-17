@@ -25,6 +25,18 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/setGameMode</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.h</DeclaredIn>
+			
+			<Declaration>- (int)setGameMode</Declaration>
+			
+			
+			<Anchor>//api/name/setGameMode</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/gameHistory</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>CardGameViewController.m</DeclaredIn>
@@ -61,14 +73,14 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/configureGameMode</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/configureGameSettings</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>CardGameViewController.m</DeclaredIn>
 			
-			<Declaration>- (void)configureGameMode</Declaration>
+			<Declaration>- (void)configureGameSettings</Declaration>
 			
 			
-			<Anchor>//api/name/configureGameMode</Anchor>
+			<Anchor>//api/name/configureGameSettings</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		

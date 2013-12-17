@@ -24,6 +24,18 @@
             <NodeRef refid="8"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PlayingCardGameViewController/setGameMode</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PlayingCardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (int)setGameMode</Declaration>
+			
+			
+			<Anchor>//api/name/setGameMode</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
         
 	</File>
 </Tokens>

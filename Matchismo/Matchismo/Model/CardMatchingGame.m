@@ -27,7 +27,7 @@
 /**
  *  Stores the current state of the card matching game.
  *  It has a NSNumber object at the 0th index, which represents the
- *  current matching state, NotCheckedYet -0 , MatchSuccess -1, MatchFailed -2
+ *  current matching state, NotCheckedYet -0 , MATCH_SUCCESS -1, MATCH_FAILED -2
  *  which is then followed by array of cards involved on that match.
  *  @return gameState Array
  */
@@ -72,7 +72,7 @@ static const int COST_TO_CHOOSE = 1;
 //Card Matching Game Logic
 -(void)chooseCardAtIndex:(NSUInteger)index{
     Card *card = [self cardAtIndex:index];
-    if(self.currentMatchState != matchNotCheckedyet) [self.cardsInvolved removeAllObjects];
+    if(self.currentMatchState != MATCH_NOT_CHECKED_YET) [self.cardsInvolved removeAllObjects];
     if(!card.isMatched){
         if(card.isChosen){
             card.chosen = NO;
@@ -82,17 +82,17 @@ static const int COST_TO_CHOOSE = 1;
         }else{
             card.chosen = YES;
             [self.cardsInvolved addObject:card];//
-            self.currentMatchState = matchNotCheckedyet;//
+            self.currentMatchState = MATCH_NOT_CHECKED_YET;//
             [self.cardsToBeMatched addObject:card];
             if([self.cardsToBeMatched count] == self.gameMode){
                 int matchScore = [card match:self.cardsToBeMatched];
                 if(matchScore){
-                    self.currentMatchState = matchSuccess;//
+                    self.currentMatchState = MATCH_SUCCESS;//
                     [self markCardsAsMatched];
                     [self.cardsToBeMatched removeAllObjects];
                     self.score += matchScore * MATCH_BONUS;
                 }else{
-                    self.currentMatchState = matchFailed;//
+                    self.currentMatchState = MATCH_FAILED;//
                     // Will change the logic after using animation
                     [self.cardsToBeMatched removeLastObject];
                     [self markCardsAsNotChosen];

@@ -19,4 +19,12 @@
     return [[PlayingCardDeck alloc]init];
 }
 
+
+-(int)setGameMode{
+    return SET_3_CARD_MODE;
+}
+
+
+
 @end
+

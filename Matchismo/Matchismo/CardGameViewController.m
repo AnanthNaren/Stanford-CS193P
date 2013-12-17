@@ -35,20 +35,30 @@
     if(!_deck) _deck = [self createDeck];
     return _deck;
 }
+
+//Anstract
 -(Deck *) createDeck{
     return nil;
 }
 
 //Configuring the GameMode before playing the game
-- (void)configureGameMode{
-    self.game.gameMode = 2;
-    [self setHistorySlider];
-    self.isGameConfigured = YES;
+- (void)configureGameSettings{
+    int chosenGameMode = [self setGameMode];
+    if(chosenGameMode){
+        self.game.gameMode = chosenGameMode;
+        [self setHistorySlider];
+        self.isGameConfigured = YES;
+    }
+}
+
+//Abstract
+- (int)setGameMode{
+    return MODE_NOT_YET_CHOSEN;
 }
 
 //ActionMethods of a card selection
 - (IBAction)touchCardButton:(UIButton*)sender {
-    [self configureGameMode];
+    [self configureGameSettings];
     if(self.isGameConfigured){
         int cardButtonIndex = [self.cardButtons indexOfObject:sender];
         [self.game chooseCardAtIndex:cardButtonIndex];
@@ -107,11 +117,11 @@ static const int SLIDER_EXPAND_VALUE = 10;
 //UpdateGameStatusLabel
 -(void) updateGameStatusLabel{
     if([self.game.cardsInvolved count]){
-        if(self.game.currentMatchState == matchNotCheckedyet){
+        if(self.game.currentMatchState == MATCH_NOT_CHECKED_YET){
             [self generateMatchMessage:@"selected"];
-        }else if(self.game.currentMatchState == matchSuccess){
+        }else if(self.game.currentMatchState == MATCH_SUCCESS){
             [self generateMatchMessage:@"Matched 4 points"];
-        }else if(self.game.currentMatchState == matchFailed){
+        }else if(self.game.currentMatchState == MATCH_FAILED){
             [self generateMatchMessage:@"Match Failed! penalty 2 points"];
         }
         [self updateHistorySlider];

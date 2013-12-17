@@ -13,11 +13,31 @@
 @interface CardGameViewController : UIViewController
 
 
+//Methods To Override
+
 /**
- *  protected for subclasses
- *
+ *  Protected for subclasses
  *  @return Desired deck of card
  */
--(Deck *) createDeck;   //abstract
+-(Deck *) createDeck;
+
+
+/**
+ *  Configure the CardMatchingGame Mode to choose
+ *  how many cards to match. Default value is
+ *  MODE_NOT_YET_CHOSEN.
+ *  @return A valid GameMode constant
+ */
+-(int)setGameMode;
+
+
+/**
+ *  GameMode Constants
+ */
+typedef enum{
+    MODE_NOT_YET_CHOSEN = 0,
+    SET_2_CARD_MODE = 2,
+    SET_3_CARD_MODE = 3,
+} gameMode;
 
 @end

@@ -160,7 +160,7 @@
 			<TokenIdentifier>//apple_ref/occ/instm/CardMatchingGame/setCardsInvolved:</TokenIdentifier>
 			<Abstract type="html">Stores the current state of the card matching game.
 It has a NSNumber object at the 0th index, which represents the
-current matching state, NotCheckedYet -0 , MatchSuccess -1, MatchFailed -2
+current matching state, NotCheckedYet -0 , MATCHSUCCESS -1, MATCHFAILED -2
 which is then followed by array of cards involved on that match.</Abstract>
 			<DeclaredIn>CardMatchingGame.h</DeclaredIn>
 			
@@ -175,7 +175,7 @@ which is then followed by array of cards involved on that match.</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instm/CardMatchingGame/cardsInvolved</TokenIdentifier>
 			<Abstract type="html">Stores the current state of the card matching game.
 It has a NSNumber object at the 0th index, which represents the
-current matching state, NotCheckedYet -0 , MatchSuccess -1, MatchFailed -2
+current matching state, NotCheckedYet -0 , MATCHSUCCESS -1, MATCHFAILED -2
 which is then followed by array of cards involved on that match.</Abstract>
 			<DeclaredIn>CardMatchingGame.h</DeclaredIn>
 			
@@ -190,7 +190,7 @@ which is then followed by array of cards involved on that match.</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instp/CardMatchingGame/cardsInvolved</TokenIdentifier>
 			<Abstract type="html">Stores the current state of the card matching game.
 It has a NSNumber object at the 0th index, which represents the
-current matching state, NotCheckedYet -0 , MatchSuccess -1, MatchFailed -2
+current matching state, NotCheckedYet -0 , MATCHSUCCESS -1, MATCHFAILED -2
 which is then followed by array of cards involved on that match.</Abstract>
 			<DeclaredIn>CardMatchingGame.h</DeclaredIn>
 			
