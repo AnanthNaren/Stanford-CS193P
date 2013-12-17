@@ -61,14 +61,14 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/configureGameMode:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/configureGameMode</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>CardGameViewController.m</DeclaredIn>
 			
-			<Declaration>- (IBAction)configureGameMode:(UISegmentedControl *)sender</Declaration>
+			<Declaration>- (void)configureGameMode</Declaration>
 			
 			
-			<Anchor>//api/name/configureGameMode:</Anchor>
+			<Anchor>//api/name/configureGameMode</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
@@ -105,18 +105,6 @@
 			
 			
 			<Anchor>//api/name/setHistorySlider</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/gameModeControllerEnabled:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CardGameViewController.m</DeclaredIn>
-			
-			<Declaration>- (void)gameModeControllerEnabled:(BOOL)state</Declaration>
-			
-			
-			<Anchor>//api/name/gameModeControllerEnabled:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
@@ -237,18 +225,6 @@
 			
 			
 			<Anchor>//api/name/resetHistorySlider</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/resetGameModeController</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CardGameViewController.m</DeclaredIn>
-			
-			<Declaration>- (void)resetGameModeController</Declaration>
-			
-			
-			<Anchor>//api/name/resetGameModeController</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
@@ -429,42 +405,6 @@
 			
 			
 			<Anchor>//api/name/cardButtons</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/setGameModeController:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CardGameViewController.m</DeclaredIn>
-			
-			<Declaration>@property (weak, nonatomic) IBOutlet UISegmentedControl *gameModeController</Declaration>
-			
-			
-			<Anchor>//api/name/gameModeController</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/gameModeController</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CardGameViewController.m</DeclaredIn>
-			
-			<Declaration>@property (weak, nonatomic) IBOutlet UISegmentedControl *gameModeController</Declaration>
-			
-			
-			<Anchor>//api/name/gameModeController</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CardGameViewController/gameModeController</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CardGameViewController.m</DeclaredIn>
-			
-			<Declaration>@property (weak, nonatomic) IBOutlet UISegmentedControl *gameModeController</Declaration>
-			
-			
-			<Anchor>//api/name/gameModeController</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		

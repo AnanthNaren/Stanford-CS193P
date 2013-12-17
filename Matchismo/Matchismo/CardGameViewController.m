@@ -14,7 +14,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *gameStatusLabel;
 @property (nonatomic,strong) IBOutletCollection(UIButton) NSArray *cardButtons;
-@property (weak, nonatomic) IBOutlet UISegmentedControl *gameModeController;
 @property (weak, nonatomic) IBOutlet UISlider *gameHistorySlider;
 @property (nonatomic, strong) NSMutableArray *gameHistory;
 @property (nonatomic)  BOOL isGameConfigured;
@@ -41,26 +40,18 @@
 }
 
 //Configuring the GameMode before playing the game
-- (IBAction)configureGameMode:(UISegmentedControl *)sender {
-    int index = [sender selectedSegmentIndex];
-    if(index == 0){
-        self.game.gameMode = 2;
-        [self displayStatusMessage:@"Selected 2 cards mode"];
-    }
-    if(index == 1){
-        self.game.gameMode = 3;
-        [self displayStatusMessage:@"Selected 3 cards mode"];
-    }
+- (void)configureGameMode{
+    self.game.gameMode = 2;
     [self setHistorySlider];
     self.isGameConfigured = YES;
 }
 
 //ActionMethods of a card selection
 - (IBAction)touchCardButton:(UIButton*)sender {
+    [self configureGameMode];
     if(self.isGameConfigured){
         int cardButtonIndex = [self.cardButtons indexOfObject:sender];
         [self.game chooseCardAtIndex:cardButtonIndex];
-        [self gameModeControllerEnabled:NO];
         [self updateUI];
     }else{
         [self displayStatusMessage:@"Please select the game mode"];
@@ -78,7 +69,7 @@
         }
         self.gameStatusLabel.textColor = [UIColor blackColor];
     }else{
-        [self displayStatusMessage:@"Please select the game mode"];
+        [self displayStatusMessage:@"Choose a card to start new game"];
         return;
     }
 }
@@ -93,12 +84,7 @@ static const int SLIDER_EXPAND_VALUE = 10;
 }
 
 
-//setting UISegmentedControl to control game modes
--(void) gameModeControllerEnabled:(BOOL)state{
-    for(int i=0; i< [self.gameModeController numberOfSegments]; i++ ){
-        [self.gameModeController setEnabled:state forSegmentAtIndex:i];
-    }
-}
+
 
 -(void) updateUI{
     [self updateCardButtonUI];
@@ -166,7 +152,6 @@ static const int SLIDER_EXPAND_VALUE = 10;
     self.game = nil;
     [self updateCardButtonUI];
     [self resetHistorySlider];
-    [self resetGameModeController];
     [self.gameHistory removeAllObjects];
     self.isGameConfigured = NO;
     self.gameStatusLabel.text = @"Welcome To Card Matching Game";
@@ -175,9 +160,6 @@ static const int SLIDER_EXPAND_VALUE = 10;
     self.gameHistorySlider.value = SLIDER_RESET_VALUE;
     self.gameHistorySlider.minimumValue = SLIDER_RESET_VALUE;
     self.gameHistorySlider.maximumValue = SLIDER_RESET_VALUE;
-}
--(void) resetGameModeController{
-    [self gameModeControllerEnabled:YES];
 }
 
 
