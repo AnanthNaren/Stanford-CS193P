@@ -13,38 +13,28 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SetCardGameViewController/initWithNibName:bundle:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/SetCardGameViewController/createDeck</TokenIdentifier>
+			<Abstract type="html">Protected for subclasses</Abstract>
 			<DeclaredIn>SetCardGameViewController.m</DeclaredIn>
 			
-			<Declaration>- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil</Declaration>
+			<Declaration>- (Deck *)createDeck</Declaration>
 			
-			
-			<Anchor>//api/name/initWithNibName:bundle:</Anchor>
+			<ReturnValue><Abstract type="html">Desired deck of card</Abstract></ReturnValue>
+			<Anchor>//api/name/createDeck</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SetCardGameViewController/viewDidLoad</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/SetCardGameViewController/setGameMode</TokenIdentifier>
+			<Abstract type="html">Configure the CardMatchingGame Mode to choose
+how many cards to match. Default value is
+MODENOTYET_CHOSEN.</Abstract>
 			<DeclaredIn>SetCardGameViewController.m</DeclaredIn>
 			
-			<Declaration>- (void)viewDidLoad</Declaration>
+			<Declaration>- (int)setGameMode</Declaration>
 			
-			
-			<Anchor>//api/name/viewDidLoad</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SetCardGameViewController/didReceiveMemoryWarning</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SetCardGameViewController.m</DeclaredIn>
-			
-			<Declaration>- (void)didReceiveMemoryWarning</Declaration>
-			
-			
-			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
+			<ReturnValue><Abstract type="html">A valid GameMode constant</Abstract></ReturnValue>
+			<Anchor>//api/name/setGameMode</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		

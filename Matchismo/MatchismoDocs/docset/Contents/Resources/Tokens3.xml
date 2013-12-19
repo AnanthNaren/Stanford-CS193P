@@ -14,7 +14,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/createDeck</TokenIdentifier>
-			<Abstract type="html">protected for subclasses</Abstract>
+			<Abstract type="html">Protected for subclasses</Abstract>
 			<DeclaredIn>CardGameViewController.h</DeclaredIn>
 			
 			<Declaration>- (Deck *)createDeck</Declaration>
@@ -26,12 +26,14 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/setGameMode</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Configure the CardMatchingGame Mode to choose
+how many cards to match. Default value is
+MODENOTYET_CHOSEN.</Abstract>
 			<DeclaredIn>CardGameViewController.h</DeclaredIn>
 			
 			<Declaration>- (int)setGameMode</Declaration>
 			
-			
+			<ReturnValue><Abstract type="html">A valid GameMode constant</Abstract></ReturnValue>
 			<Anchor>//api/name/setGameMode</Anchor>
             <NodeRef refid="3"/>
 		</Token>

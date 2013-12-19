@@ -41,11 +41,9 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/didReceiveMemoryWarning">&nbsp;&nbsp;&nbsp;&nbsp;- didReceiveMemoryWarning</option>
+	<option value="//api/name/createDeck">&nbsp;&nbsp;&nbsp;&nbsp;- createDeck</option>
 	
-	<option value="//api/name/initWithNibName:bundle:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithNibName:bundle:</option>
-	
-	<option value="//api/name/viewDidLoad">&nbsp;&nbsp;&nbsp;&nbsp;- viewDidLoad</option>
+	<option value="//api/name/setGameMode">&nbsp;&nbsp;&nbsp;&nbsp;- setGameMode</option>
 	
 	
 	
@@ -73,11 +71,9 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didReceiveMemoryWarning">didReceiveMemoryWarning</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createDeck">createDeck</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithNibName:bundle:">initWithNibName:bundle:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewDidLoad">viewDidLoad</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setGameMode">setGameMode</a></span></li>
 	
 </ul></li>
 
@@ -126,19 +122,13 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/initWithNibName:bundle:">&ndash;&nbsp;initWithNibName:bundle:</a></code>
+		<code><a href="#//api/name/createDeck">&ndash;&nbsp;createDeck</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/viewDidLoad">&ndash;&nbsp;viewDidLoad</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/didReceiveMemoryWarning">&ndash;&nbsp;didReceiveMemoryWarning</a></code>
+		<code><a href="#//api/name/setGameMode">&ndash;&nbsp;setGameMode</a></code>
 	</span>
 	
 	
@@ -160,36 +150,87 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/didReceiveMemoryWarning" title="didReceiveMemoryWarning"></a>
-	<h3 class="subsubtitle method-title">didReceiveMemoryWarning</h3>
+	<a name="//api/name/createDeck" title="createDeck"></a>
+	<h3 class="subsubtitle method-title">createDeck</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Protected for subclasses</p>
+	</div>		
+	
+    
 
-	<div class="method-subsection method-declaration"><code>- (void)didReceiveMemoryWarning</code></div>
+	<div class="method-subsection method-declaration"><code>- (Deck *)createDeck</code></div>
 
     
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Desired <a href="../Classes/CardGameViewController.html#//api/name/deck">deck</a> of card</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CardGameViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/initWithNibName:bundle:" title="initWithNibName:bundle:"></a>
-	<h3 class="subsubtitle method-title">initWithNibName:bundle:</h3>
+	<a name="//api/name/setGameMode" title="setGameMode"></a>
+	<h3 class="subsubtitle method-title">setGameMode</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Configure the <a href="../Classes/CardMatchingGame.html">CardMatchingGame</a> Mode to choose
+how many cards to match. Default value is
+MODE_NOT_YET_CHOSEN.</p>
+	</div>		
+	
+    
 
-	<div class="method-subsection method-declaration"><code>- (id)initWithNibName:(NSString *)<em>nibNameOrNil</em> bundle:(NSBundle *)<em>nibBundleOrNil</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (int)setGameMode</code></div>
 
     
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/viewDidLoad" title="viewDidLoad"></a>
-	<h3 class="subsubtitle method-title">viewDidLoad</h3>
 	
 	
-
-	<div class="method-subsection method-declaration"><code>- (void)viewDidLoad</code></div>
-
-    
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A valid GameMode constant</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CardGameViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 					</div>
@@ -207,7 +248,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 AravinthChandran. All rights reserved. (Last updated: 2013-12-17)</span><br />
+						<p><span class="copyright">&copy; 2013 AravinthChandran. All rights reserved. (Last updated: 2013-12-19)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

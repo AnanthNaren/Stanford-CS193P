@@ -21,7 +21,7 @@
 
 
 -(int)setGameMode{
-    return SET_3_CARD_MODE;
+    return SET_2_CARD_MODE;
 }
 
 
