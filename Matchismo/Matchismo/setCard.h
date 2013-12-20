@@ -13,12 +13,11 @@
 //Properties of a SET card
 @property (nonatomic)int number;
 @property (nonatomic, strong)NSString *shape;
-@property (nonatomic, strong)NSString *color;
 @property (nonatomic, strong)NSString *shade;
+@property (nonatomic, strong)NSString *color;
 
 -(int)match:(NSArray *)card;
 +(NSArray *)validCardNumbers;
 +(NSArray *) validShades;
-
 
 @end

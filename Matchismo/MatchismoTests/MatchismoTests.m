@@ -22,10 +22,10 @@
     setCard *newCard = [[setCard alloc]init];
     int number = 1;
     NSString *shade = @"solid";
+    newCard.shade = shade;
     newCard.number = number;
     newCard.shape = @"triangle";
     newCard.color = @"red";
-    newCard.shade = shade;
     XCTAssertEqual( number,newCard.number, @"Number not assigned");
     
     number = 5;
@@ -37,9 +37,9 @@
     XCTAssertNotEqual(shade, newCard.shade, @"Number is not protective against wrong inputs");
 }
 
--(void)testSetCardDeck
-{
-    
+-(void)testSetCardDeck{
+    setCardDeck *deck = [[setCardDeck alloc]initwithD];
+    deck
 }
 
 

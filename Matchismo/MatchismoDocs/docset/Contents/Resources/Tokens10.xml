@@ -85,42 +85,6 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/setCard/setColor:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>setCard.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *color</Declaration>
-			
-			
-			<Anchor>//api/name/color</Anchor>
-            <NodeRef refid="10"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/setCard/color</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>setCard.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *color</Declaration>
-			
-			
-			<Anchor>//api/name/color</Anchor>
-            <NodeRef refid="10"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/setCard/color</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>setCard.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *color</Declaration>
-			
-			
-			<Anchor>//api/name/color</Anchor>
-            <NodeRef refid="10"/>
-		</Token>
-		
-		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/setCard/setShade:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>setCard.h</DeclaredIn>
@@ -153,6 +117,42 @@
 			
 			
 			<Anchor>//api/name/shade</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/setCard/setColor:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>setCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *color</Declaration>
+			
+			
+			<Anchor>//api/name/color</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/setCard/color</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>setCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *color</Declaration>
+			
+			
+			<Anchor>//api/name/color</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/setCard/color</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>setCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *color</Declaration>
+			
+			
+			<Anchor>//api/name/color</Anchor>
             <NodeRef refid="10"/>
 		</Token>
 		

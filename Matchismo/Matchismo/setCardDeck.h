@@ -14,4 +14,6 @@
 -(instancetype)initWithColor:(NSArray *)colors
                    andShapes:(NSArray *)shapes;
 
+-(instancetype)initWithDefaults;
+
 @end
