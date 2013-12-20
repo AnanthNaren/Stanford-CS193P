@@ -164,7 +164,7 @@ static const int SLIDER_EXPAND_VALUE = 10;
     [self resetHistorySlider];
     [self.gameHistory removeAllObjects];
     self.isGameConfigured = NO;
-    self.gameStatusLabel.text = @"Welcome To Card Matching Game";
+    self.gameStatusLabel.text = @"Welcome To  SET Game";
 }
 -(void) resetHistorySlider{
     self.gameHistorySlider.value = SLIDER_RESET_VALUE;

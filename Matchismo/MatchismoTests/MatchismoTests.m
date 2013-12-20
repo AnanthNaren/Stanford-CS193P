@@ -7,6 +7,8 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "setCard.h"
+#import "setCardDeck.h"
 
 @interface MatchismoTests : XCTestCase
 
@@ -14,21 +16,31 @@
 
 @implementation MatchismoTests
 
-- (void)setUp
+
+- (void)testSetCard
 {
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    setCard *newCard = [[setCard alloc]init];
+    int number = 1;
+    NSString *shade = @"solid";
+    newCard.number = number;
+    newCard.shape = @"triangle";
+    newCard.color = @"red";
+    newCard.shade = shade;
+    XCTAssertEqual( number,newCard.number, @"Number not assigned");
+    
+    number = 5;
+    newCard.number = number;
+    XCTAssertNotEqual( number,newCard.number, @"Number is not protective against wrong inputs");
+    
+    shade = @"glued";
+    newCard.shade = shade;
+    XCTAssertNotEqual(shade, newCard.shade, @"Number is not protective against wrong inputs");
 }
 
-- (void)tearDown
+-(void)testSetCardDeck
 {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
+    
 }
 
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
-}
 
 @end

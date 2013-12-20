@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/setCard.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/setCard</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>setCard.h</DeclaredIn>
+            
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/setCard/setNumber:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>setCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) int number</Declaration>
+			
+			
+			<Anchor>//api/name/number</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/setCard/number</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>setCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) int number</Declaration>
+			
+			
+			<Anchor>//api/name/number</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/setCard/number</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>setCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) int number</Declaration>
+			
+			
+			<Anchor>//api/name/number</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/setCard/setShape:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>setCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *shape</Declaration>
+			
+			
+			<Anchor>//api/name/shape</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/setCard/shape</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>setCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *shape</Declaration>
+			
+			
+			<Anchor>//api/name/shape</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/setCard/shape</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>setCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *shape</Declaration>
+			
+			
+			<Anchor>//api/name/shape</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/setCard/setColor:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>setCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *color</Declaration>
+			
+			
+			<Anchor>//api/name/color</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/setCard/color</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>setCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *color</Declaration>
+			
+			
+			<Anchor>//api/name/color</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/setCard/color</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>setCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *color</Declaration>
+			
+			
+			<Anchor>//api/name/color</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/setCard/setShade:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>setCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *shade</Declaration>
+			
+			
+			<Anchor>//api/name/shade</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/setCard/shade</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>setCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *shade</Declaration>
+			
+			
+			<Anchor>//api/name/shade</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/setCard/shade</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>setCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *shade</Declaration>
+			
+			
+			<Anchor>//api/name/shade</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/setCard/match:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>setCard.h</DeclaredIn>
+			
+			<Declaration>- (int)match:(NSArray *)card</Declaration>
+			
+			
+			<Anchor>//api/name/match:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/setCard/validCardNumbers</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>setCard.h</DeclaredIn>
+			
+			<Declaration>+ (NSArray *)validCardNumbers</Declaration>
+			
+			
+			<Anchor>//api/name/validCardNumbers</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/setCard/validShades</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>setCard.h</DeclaredIn>
+			
+			<Declaration>+ (NSArray *)validShades</Declaration>
+			
+			
+			<Anchor>//api/name/validShades</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

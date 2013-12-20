@@ -40,9 +40,11 @@
 }
 
 @synthesize suit = _suit;
+
 -(NSString *) suit{
     return _suit ? _suit : @"?" ;
 }
+
 -(void)setSuit:(NSString *)suit{
     
     if([ [PlayingCard validSuits] containsObject:suit ]){

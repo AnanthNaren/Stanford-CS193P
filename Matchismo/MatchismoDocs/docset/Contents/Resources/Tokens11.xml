@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/setCardDeck.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/setCardDeck</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>setCardDeck.h</DeclaredIn>
+            
+			
+			<NodeRef refid="11"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/setCardDeck/initWithColor:andShapes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>setCardDeck.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithColor:(NSArray *)colors andShapes:(NSArray *)shapes</Declaration>
+			
+			
+			<Anchor>//api/name/initWithColor:andShapes:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/setCardDeck/initWithDefaults</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>setCardDeck.m</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithDefaults</Declaration>
+			
+			
+			<Anchor>//api/name/initWithDefaults</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>
