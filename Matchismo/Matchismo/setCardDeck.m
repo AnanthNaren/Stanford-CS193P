@@ -35,7 +35,7 @@
 
 -(instancetype)initWithDefaults{
     NSArray *colors = @[@"green", @"purple", @"red"];
-    NSArray *shapes = @[@"triangle", @"circle", @"purple"];
+    NSArray *shapes = @[@"▲", @"●", @"■"];
     return [self initWithColor:colors andShapes:shapes] ;
 }
 

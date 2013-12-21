@@ -35,23 +35,34 @@
     return _deck;
 }
 
-//Anstract
+//Abstract Methods
 -(Deck *) createDeck{
     return nil;
 }
 
-//Game will not be allowed to run unless you override setGameMode.
+-(UIImage *)chosenCardBackgroundImage{
+    return nil;
+}
+
+-(UIImage *)UnChosenCardBackgroundImage{
+    return nil;
+}
+
+-(NSString *)cardContents:(Card *)card{
+    return nil;
+}
+
+- (int)setGameMode{
+    return MODE_NOT_YET_CHOSEN;
+}
+
+//Game will not be allowed to run unless you override setGameMode method.
 - (void)configureGameSettings{
     int chosenGameMode = [self setGameMode];
     if(chosenGameMode){
         self.game.gameMode = chosenGameMode;
         self.isGameConfigured = YES;
     }
-}
-
-//Abstract
-- (int)setGameMode{
-    return MODE_NOT_YET_CHOSEN;
 }
 
 //ActionMethods of a card selection
@@ -101,10 +112,11 @@
     self.gameStatusLabel.text = message;
     
 }
+
 -(void) generateMatchMessage:(NSString *)message{
     NSString *status = @"The card ";
     for(Card *card in self.game.cardsInvolved){
-        status = [status stringByAppendingString:[NSString stringWithFormat:@" %@ ",card.contents]];
+        status = [status stringByAppendingString:[NSString stringWithFormat:@" %@ ",[self cardContents:card]]];
     }
     status = [status stringByAppendingString:message];
     self.gameStatusLabel.text = status;
@@ -112,10 +124,12 @@
 }
 
 -(NSString *)titleForCard:(Card *)card{
-    return card.isChosen ? card.contents : @"";
+    return card.isChosen ? [self cardContents:card] : @"";
 }
+
 -(UIImage *)backgroundImageForCard:(Card *)card{
-    return [UIImage imageNamed:card.isChosen ? @"cardfront" : @"cardback"];
+    return card.isChosen ? [self chosenCardBackgroundImage] :
+    [self UnChosenCardBackgroundImage];
 }
 
 - (IBAction)dealButton:(UIButton *)sender {

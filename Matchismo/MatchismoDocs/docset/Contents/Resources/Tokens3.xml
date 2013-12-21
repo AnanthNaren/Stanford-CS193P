@@ -39,6 +39,42 @@ MODENOTYET_CHOSEN.</Abstract>
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/chosenCardBackgroundImage</TokenIdentifier>
+			<Abstract type="html">GameMode Constants</Abstract>
+			<DeclaredIn>CardGameViewController.h</DeclaredIn>
+			
+			<Declaration>- (UIImage *)chosenCardBackgroundImage</Declaration>
+			
+			
+			<Anchor>//api/name/chosenCardBackgroundImage</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/UnChosenCardBackgroundImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.h</DeclaredIn>
+			
+			<Declaration>- (UIImage *)UnChosenCardBackgroundImage</Declaration>
+			
+			
+			<Anchor>//api/name/UnChosenCardBackgroundImage</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/cardContents:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)cardContents:(Card *)card</Declaration>
+			
+			
+			<Anchor>//api/name/cardContents:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/gameHistory</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>CardGameViewController.m</DeclaredIn>

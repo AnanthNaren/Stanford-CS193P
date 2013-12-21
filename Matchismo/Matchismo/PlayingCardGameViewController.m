@@ -9,23 +9,27 @@
 #import "PlayingCardGameViewController.h"
 #import "PlayingCardDeck.h"
 
-@interface PlayingCardGameViewController ()
-
-@end
-
 @implementation PlayingCardGameViewController
 
 -(Deck *)createDeck{
     return [[PlayingCardDeck alloc]init];
 }
 
-
 -(int)setGameMode{
     return SET_2_CARD_MODE;
 }
 
+-(UIImage *)chosenCardBackgroundImage{
+    return [UIImage imageNamed:@"cardfront"];
+}
 
+-(UIImage *)UnChosenCardBackgroundImage{
+    return [UIImage imageNamed:@"cardback"];
+}
 
+-(NSString *)cardContents:(Card *)card{
+    return card.contents;
+}
 
 @end
 

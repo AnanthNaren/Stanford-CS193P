@@ -10,6 +10,7 @@
 #import "setCard.h"
 #import "setCardDeck.h"
 #import "PlayingCardDeck.h"
+#import "playingCardGameViewController.h"
 
 @interface MatchismoTests : XCTestCase
 
@@ -36,8 +37,8 @@
     shade = @"glued";
     newCard.shade = shade;
     XCTAssertNotEqual(shade, newCard.shade, @"Number is not protective against wrong inputs");
+    PlayingCardGameViewController *cgvc = [[PlayingCardGameViewController alloc] init];
+    [cgvc setGameMode];
 }
-
-
 
 @end
