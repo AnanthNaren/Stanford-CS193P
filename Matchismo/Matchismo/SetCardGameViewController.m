@@ -7,7 +7,7 @@
 //
 
 #import "SetCardGameViewController.h"
-#import "PlayingCardDeck.h"
+#import "setCardDeck.h"
 
 @interface SetCardGameViewController ()
 
@@ -16,7 +16,7 @@
 @implementation SetCardGameViewController
 
 -(Deck *)createDeck{
-    return [[PlayingCardDeck alloc]init];
+    return [[setCardDeck alloc]init];
 }
 
 

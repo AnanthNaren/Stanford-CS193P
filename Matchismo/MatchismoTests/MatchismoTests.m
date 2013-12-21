@@ -9,6 +9,7 @@
 #import <XCTest/XCTest.h>
 #import "setCard.h"
 #import "setCardDeck.h"
+#import "PlayingCardDeck.h"
 
 @interface MatchismoTests : XCTestCase
 
@@ -37,10 +38,6 @@
     XCTAssertNotEqual(shade, newCard.shade, @"Number is not protective against wrong inputs");
 }
 
--(void)testSetCardDeck{
-    setCardDeck *deck = [[setCardDeck alloc]initwithD];
-    deck
-}
 
 
 @end

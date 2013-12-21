@@ -14,7 +14,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *gameStatusLabel;
 @property (nonatomic,strong) IBOutletCollection(UIButton) NSArray *cardButtons;
-@property (weak, nonatomic) IBOutlet UISlider *gameHistorySlider;
 @property (nonatomic, strong) NSMutableArray *gameHistory;
 @property (nonatomic)  BOOL isGameConfigured;
 @end
@@ -41,12 +40,11 @@
     return nil;
 }
 
-//Configuring the GameMode before playing the game
+//Game will not be allowed to run unless you override setGameMode.
 - (void)configureGameSettings{
     int chosenGameMode = [self setGameMode];
     if(chosenGameMode){
         self.game.gameMode = chosenGameMode;
-        [self setHistorySlider];
         self.isGameConfigured = YES;
     }
 }
@@ -63,38 +61,8 @@
         int cardButtonIndex = [self.cardButtons indexOfObject:sender];
         [self.game chooseCardAtIndex:cardButtonIndex];
         [self updateUI];
-    }else{
-        [self displayStatusMessage:@"Please select the game mode"];
-        return;
     }
 }
-
-- (IBAction)historySlider:(UISlider *)sender {
-    if(self.isGameConfigured){
-        self.gameStatusLabel.textColor = [UIColor grayColor];
-        int value = sender.value;
-        if(value < [self.gameHistory count]){
-            NSString *message = [self.gameHistory objectAtIndex:(int)sender.value];
-            [self displayStatusMessage:message];
-        }
-        self.gameStatusLabel.textColor = [UIColor blackColor];
-    }else{
-        [self displayStatusMessage:@"Choose a card to start new game"];
-        return;
-    }
-}
-
-//setHistorySlider
-static const int SLIDER_STARTING_VALUE = 0;
-static const int SLIDER_RESET_VALUE = 0;
-static const int SLIDER_EXPAND_VALUE = 10;
--(void) setHistorySlider{
-    self.gameHistorySlider.minimumValue = SLIDER_STARTING_VALUE;
-    self.gameHistorySlider.maximumValue = [self.cardButtons count]/self.game.gameMode;
-}
-
-
-
 
 -(void) updateUI{
     [self updateCardButtonUI];
@@ -124,18 +92,9 @@ static const int SLIDER_EXPAND_VALUE = 10;
         }else if(self.game.currentMatchState == MATCH_FAILED){
             [self generateMatchMessage:@"Match Failed! penalty 2 points"];
         }
-        [self updateHistorySlider];
     }else{
         self.gameStatusLabel.text = @"";
     }
-}
-
--(void)updateHistorySlider{
-    float currentValue = [self.gameHistorySlider value];
-    if(currentValue == self.gameHistorySlider.maximumValue){
-        self.gameHistorySlider.maximumValue = self.gameHistorySlider.maximumValue + SLIDER_EXPAND_VALUE;
-    }
-    [self.gameHistorySlider setValue:(++currentValue) animated:YES];
 }
 
 -(void) displayStatusMessage:(NSString *)message{
@@ -158,20 +117,13 @@ static const int SLIDER_EXPAND_VALUE = 10;
 -(UIImage *)backgroundImageForCard:(Card *)card{
     return [UIImage imageNamed:card.isChosen ? @"cardfront" : @"cardback"];
 }
+
 - (IBAction)dealButton:(UIButton *)sender {
     self.game = nil;
     [self updateCardButtonUI];
-    [self resetHistorySlider];
     [self.gameHistory removeAllObjects];
     self.isGameConfigured = NO;
-    self.gameStatusLabel.text = @"Welcome To  SET Game";
+    self.gameStatusLabel.text = @"Starting New Game";
 }
--(void) resetHistorySlider{
-    self.gameHistorySlider.value = SLIDER_RESET_VALUE;
-    self.gameHistorySlider.minimumValue = SLIDER_RESET_VALUE;
-    self.gameHistorySlider.maximumValue = SLIDER_RESET_VALUE;
-}
-
-
 
 @end

@@ -99,30 +99,6 @@ MODENOTYET_CHOSEN.</Abstract>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/historySlider:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CardGameViewController.m</DeclaredIn>
-			
-			<Declaration>- (IBAction)historySlider:(UISlider *)sender</Declaration>
-			
-			
-			<Anchor>//api/name/historySlider:</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/setHistorySlider</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CardGameViewController.m</DeclaredIn>
-			
-			<Declaration>- (void)setHistorySlider</Declaration>
-			
-			
-			<Anchor>//api/name/setHistorySlider</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/updateUI</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>CardGameViewController.m</DeclaredIn>
@@ -155,18 +131,6 @@ MODENOTYET_CHOSEN.</Abstract>
 			
 			
 			<Anchor>//api/name/updateGameStatusLabel</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/updateHistorySlider</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CardGameViewController.m</DeclaredIn>
-			
-			<Declaration>- (void)updateHistorySlider</Declaration>
-			
-			
-			<Anchor>//api/name/updateHistorySlider</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
@@ -227,18 +191,6 @@ MODENOTYET_CHOSEN.</Abstract>
 			
 			
 			<Anchor>//api/name/dealButton:</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/resetHistorySlider</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CardGameViewController.m</DeclaredIn>
-			
-			<Declaration>- (void)resetHistorySlider</Declaration>
-			
-			
-			<Anchor>//api/name/resetHistorySlider</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
@@ -419,42 +371,6 @@ MODENOTYET_CHOSEN.</Abstract>
 			
 			
 			<Anchor>//api/name/cardButtons</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/setGameHistorySlider:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CardGameViewController.m</DeclaredIn>
-			
-			<Declaration>@property (weak, nonatomic) IBOutlet UISlider *gameHistorySlider</Declaration>
-			
-			
-			<Anchor>//api/name/gameHistorySlider</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/gameHistorySlider</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CardGameViewController.m</DeclaredIn>
-			
-			<Declaration>@property (weak, nonatomic) IBOutlet UISlider *gameHistorySlider</Declaration>
-			
-			
-			<Anchor>//api/name/gameHistorySlider</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CardGameViewController/gameHistorySlider</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CardGameViewController.m</DeclaredIn>
-			
-			<Declaration>@property (weak, nonatomic) IBOutlet UISlider *gameHistorySlider</Declaration>
-			
-			
-			<Anchor>//api/name/gameHistorySlider</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		

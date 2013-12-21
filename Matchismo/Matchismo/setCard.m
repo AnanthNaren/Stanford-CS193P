@@ -14,7 +14,7 @@
 @synthesize shape = _shape;
 
 -(void)setShape:(NSString *)shape{
-    _shape = @"dddd";
+    _shape = shape;
 }
 
 -(NSString *)shape{

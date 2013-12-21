@@ -27,7 +27,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/setCardDeck/initWithDefaults</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>setCardDeck.m</DeclaredIn>
+			<DeclaredIn>setCardDeck.h</DeclaredIn>
 			
 			<Declaration>- (instancetype)initWithDefaults</Declaration>
 			

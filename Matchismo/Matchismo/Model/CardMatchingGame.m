@@ -60,8 +60,6 @@
 }
 
 
-
-
 /**
  *  Main Logic of the game
  */
