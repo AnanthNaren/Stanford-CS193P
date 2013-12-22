@@ -68,8 +68,26 @@
 
 
 //Instance Methods
--(int)match:(NSArray *)card{
-    return 0;
+-(int)match:(NSArray *)cards{
+    int score = 0;
+    int match = 0;
+    if([cards count] == 3){
+        setCard *cardA = cards[0], *cardB = cards[1], *cardC = cards[2];
+        if((cardA.number == cardB.number && cardB.number == cardC.number && cardC.number == cardA.number) || (cardA.number != cardB.number && cardB.number != cardC.number && cardC.number != cardA.number)){
+            match++;
+        }
+        if((cardA.color == cardB.color && cardB.color == cardC.color && cardC.color == cardA.color) || (cardA.color != cardB.color && cardB.color != cardC.color && cardC.color != cardA.color)){
+            match++;
+        }
+        if((cardA.shade == cardB.shade && cardB.shade == cardC.shade && cardC.shade == cardA.shade) || (cardA.shade != cardB.shade && cardB.shade != cardC.shade && cardC.shade != cardA.shade)){
+            match++;
+        }
+        if((cardA.shape == cardB.shape && cardB.shape == cardC.shape && cardC.shape == cardA.shape) || (cardA.shape != cardB.shape && cardB.shape != cardC.shape && cardC.shape != cardA.shape)){
+            match++;
+        }
+        if(match == 4) score = 2;
+    }
+    return score;
 }
 
 @end

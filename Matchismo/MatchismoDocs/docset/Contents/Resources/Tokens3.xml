@@ -159,6 +159,18 @@ MODENOTYET_CHOSEN.</Abstract>
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/titleForCard:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)titleForCard:(Card *)card</Declaration>
+			
+			
+			<Anchor>//api/name/titleForCard:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/updateGameStatusLabel</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>CardGameViewController.m</DeclaredIn>
@@ -191,18 +203,6 @@ MODENOTYET_CHOSEN.</Abstract>
 			
 			
 			<Anchor>//api/name/generateMatchMessage:</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/titleForCard:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CardGameViewController.m</DeclaredIn>
-			
-			<Declaration>- (NSString *)titleForCard:(Card *)card</Declaration>
-			
-			
-			<Anchor>//api/name/titleForCard:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		

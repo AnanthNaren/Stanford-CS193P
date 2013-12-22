@@ -38,6 +38,30 @@ MODENOTYET_CHOSEN.</Abstract>
             <NodeRef refid="9"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SetCardGameViewController/chosenCardBackgroundImage</TokenIdentifier>
+			<Abstract type="html">GameMode Constants</Abstract>
+			<DeclaredIn>SetCardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (UIImage *)chosenCardBackgroundImage</Declaration>
+			
+			
+			<Anchor>//api/name/chosenCardBackgroundImage</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SetCardGameViewController/UnChosenCardBackgroundImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SetCardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (UIImage *)UnChosenCardBackgroundImage</Declaration>
+			
+			
+			<Anchor>//api/name/UnChosenCardBackgroundImage</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
         
 	</File>
 </Tokens>

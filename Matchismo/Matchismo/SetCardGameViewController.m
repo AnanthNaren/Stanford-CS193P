@@ -24,4 +24,12 @@
     return SET_3_CARD_MODE;
 }
 
+-(UIImage *)chosenCardBackgroundImage{
+    return [UIImage imageNamed:@"setcardchosen"];
+}
+
+-(UIImage *)UnChosenCardBackgroundImage{
+    return [UIImage imageNamed:@"cardfront"];
+}
+
 @end

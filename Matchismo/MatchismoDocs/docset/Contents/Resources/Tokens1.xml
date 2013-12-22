@@ -125,7 +125,7 @@
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>Card.h</DeclaredIn>
 			
-			<Declaration>- (int)match:(NSArray *)card</Declaration>
+			<Declaration>- (int)match:(NSArray *)cards</Declaration>
 			
 			
 			<Anchor>//api/name/match:</Anchor>

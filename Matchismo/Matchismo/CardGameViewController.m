@@ -93,6 +93,16 @@
     }
 }
 
+-(NSString *)titleForCard:(Card *)card{
+    return card.isChosen ? [self cardContents:card] : @"";
+}
+
+-(UIImage *)backgroundImageForCard:(Card *)card{
+    return card.isChosen ? [self chosenCardBackgroundImage] :
+    [self UnChosenCardBackgroundImage];
+}
+
+
 //UpdateGameStatusLabel
 -(void) updateGameStatusLabel{
     if([self.game.cardsInvolved count]){
@@ -121,15 +131,6 @@
     status = [status stringByAppendingString:message];
     self.gameStatusLabel.text = status;
     [self.gameHistory addObject:status];
-}
-
--(NSString *)titleForCard:(Card *)card{
-    return card.isChosen ? [self cardContents:card] : @"";
-}
-
--(UIImage *)backgroundImageForCard:(Card *)card{
-    return card.isChosen ? [self chosenCardBackgroundImage] :
-    [self UnChosenCardBackgroundImage];
 }
 
 - (IBAction)dealButton:(UIButton *)sender {
