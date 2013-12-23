@@ -143,26 +143,20 @@
 }
 
 -(void) generateMatchMessage:(NSString *)message{
-    NSString *status = @"The card ";
-    
-    for(Card *card in self.game.cardsInvolved){
-        status = [status stringByAppendingString:[NSString stringWithFormat:@" %@ ",[self formatCardContents:card]]];
-    }
-    status = [status stringByAppendingString:message];
-    self.gameStatusLabel.text = status;
-    [self.gameHistory addObject:status];
-}
-
--(NSString *)formatCardContents:(Card *)card{
-    NSString *cardContents;
-    id contents = [self cardContents:card];
+    id contents = [self cardContents:[self.game.cardsInvolved firstObject]];
     if([contents isKindOfClass:[NSString class]]){
-        
+        NSString *status = @"The card ";
+        for(Card *card in self.game.cardsInvolved){
+            status = [status stringByAppendingString:[NSString stringWithFormat:@" %@ ",[self cardContents:card]]];
+        }
+        status = [status stringByAppendingString:message];
+        self.gameStatusLabel.text = status;
+        [self.gameHistory addObject:status];
     }else if([contents isKindOfClass:[NSAttributedString class]]){
         
     }
-    return cardContents;
 }
+
 
 //Redeal the game
 - (IBAction)dealButton:(UIButton *)sender {

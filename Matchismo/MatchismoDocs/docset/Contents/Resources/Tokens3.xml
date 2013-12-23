@@ -255,18 +255,6 @@ MODENOTYET_CHOSEN.</Abstract>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/formatCardContents:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CardGameViewController.m</DeclaredIn>
-			
-			<Declaration>- (NSString *)formatCardContents:(Card *)card</Declaration>
-			
-			
-			<Anchor>//api/name/formatCardContents:</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/dealButton:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>CardGameViewController.m</DeclaredIn>

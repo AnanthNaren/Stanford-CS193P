@@ -62,6 +62,18 @@ MODENOTYET_CHOSEN.</Abstract>
             <NodeRef refid="9"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SetCardGameViewController/cardContents:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SetCardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (id)cardContents:(Card *)card</Declaration>
+			
+			
+			<Anchor>//api/name/cardContents:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
         
 	</File>
 </Tokens>

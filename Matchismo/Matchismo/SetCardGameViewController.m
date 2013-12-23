@@ -16,7 +16,7 @@
 @implementation SetCardGameViewController
 
 -(Deck *)createDeck{
-    return [[setCardDeck alloc]init];
+    return [[setCardDeck alloc]initWithDefaults];
 }
 
 -(int)setGameMode{
@@ -29,6 +29,19 @@
 
 -(UIImage *)UnChosenCardBackgroundImage{
     return [UIImage imageNamed:@"cardfront"];
+}
+
+
+//Interospect the set_Card if it is one.
+-(id)cardContents:(Card *)card{
+    NSString *contents = @"";
+    NSMutableAttributedString *attributedContents;
+    setCard *set_Card = (setCard *)card;
+    for(int i=0; i<set_Card.number; i++){
+        NSString *shape = set_Card.shape;
+        contents = [contents stringByAppendingString:shape];
+    }
+    return contents;
 }
 
 @end
