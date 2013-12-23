@@ -44,7 +44,7 @@ typedef enum{
 
 -(UIImage *)UnChosenCardBackgroundImage;
 
--(NSString *)cardContents:(Card *)card;
+-(id)cardContents:(Card *)card;
 
 
 @end

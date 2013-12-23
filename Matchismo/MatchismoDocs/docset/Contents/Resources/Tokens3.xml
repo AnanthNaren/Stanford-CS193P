@@ -67,7 +67,7 @@ MODENOTYET_CHOSEN.</Abstract>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>CardGameViewController.h</DeclaredIn>
 			
-			<Declaration>- (NSString *)cardContents:(Card *)card</Declaration>
+			<Declaration>- (id)cardContents:(Card *)card</Declaration>
 			
 			
 			<Anchor>//api/name/cardContents:</Anchor>
@@ -159,14 +159,62 @@ MODENOTYET_CHOSEN.</Abstract>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/titleForCard:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/setTitleForCardButton:ofCard:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>CardGameViewController.m</DeclaredIn>
 			
-			<Declaration>- (NSString *)titleForCard:(Card *)card</Declaration>
+			<Declaration>- (void)setTitleForCardButton:(UIButton *)cardButton ofCard:(Card *)card</Declaration>
 			
 			
-			<Anchor>//api/name/titleForCard:</Anchor>
+			<Anchor>//api/name/setTitleForCardButton:ofCard:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/getStringContentOfCard:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)getStringContentOfCard:(Card *)card</Declaration>
+			
+			
+			<Anchor>//api/name/getStringContentOfCard:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/getAttributedStringContentOfCard:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (NSAttributedString *)getAttributedStringContentOfCard:(Card *)card</Declaration>
+			
+			
+			<Anchor>//api/name/getAttributedStringContentOfCard:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/backgroundImageForCard:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (UIImage *)backgroundImageForCard:(Card *)card</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundImageForCard:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/updateScoreLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)updateScoreLabel</Declaration>
+			
+			
+			<Anchor>//api/name/updateScoreLabel</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
@@ -207,14 +255,14 @@ MODENOTYET_CHOSEN.</Abstract>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/backgroundImageForCard:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/formatCardContents:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>CardGameViewController.m</DeclaredIn>
 			
-			<Declaration>- (UIImage *)backgroundImageForCard:(Card *)card</Declaration>
+			<Declaration>- (NSString *)formatCardContents:(Card *)card</Declaration>
 			
 			
-			<Anchor>//api/name/backgroundImageForCard:</Anchor>
+			<Anchor>//api/name/formatCardContents:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		

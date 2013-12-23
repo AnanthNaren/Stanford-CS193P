@@ -58,8 +58,7 @@
 
 //Class Methods
 +(NSArray *)validCardNumbers{
-    NSArray *ff =  @[@1, @2, @3];
-    return ff;
+    return @[@1, @2, @3];
 }
 
 +(NSArray *) validShades{

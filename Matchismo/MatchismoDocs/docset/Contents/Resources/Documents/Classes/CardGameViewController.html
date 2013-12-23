@@ -76,21 +76,29 @@
 	
 	<option value="//api/name/displayStatusMessage:">&nbsp;&nbsp;&nbsp;&nbsp;- displayStatusMessage:</option>
 	
+	<option value="//api/name/formatCardContents:">&nbsp;&nbsp;&nbsp;&nbsp;- formatCardContents:</option>
+	
 	<option value="//api/name/game">&nbsp;&nbsp;&nbsp;&nbsp;- game</option>
 	
 	<option value="//api/name/gameHistory">&nbsp;&nbsp;&nbsp;&nbsp;- gameHistory</option>
 	
 	<option value="//api/name/generateMatchMessage:">&nbsp;&nbsp;&nbsp;&nbsp;- generateMatchMessage:</option>
 	
+	<option value="//api/name/getAttributedStringContentOfCard:">&nbsp;&nbsp;&nbsp;&nbsp;- getAttributedStringContentOfCard:</option>
+	
+	<option value="//api/name/getStringContentOfCard:">&nbsp;&nbsp;&nbsp;&nbsp;- getStringContentOfCard:</option>
+	
 	<option value="//api/name/setGameMode">&nbsp;&nbsp;&nbsp;&nbsp;- setGameMode</option>
 	
-	<option value="//api/name/titleForCard:">&nbsp;&nbsp;&nbsp;&nbsp;- titleForCard:</option>
+	<option value="//api/name/setTitleForCardButton:ofCard:">&nbsp;&nbsp;&nbsp;&nbsp;- setTitleForCardButton:ofCard:</option>
 	
 	<option value="//api/name/touchCardButton:">&nbsp;&nbsp;&nbsp;&nbsp;- touchCardButton:</option>
 	
 	<option value="//api/name/updateCardButtonUI">&nbsp;&nbsp;&nbsp;&nbsp;- updateCardButtonUI</option>
 	
 	<option value="//api/name/updateGameStatusLabel">&nbsp;&nbsp;&nbsp;&nbsp;- updateGameStatusLabel</option>
+	
+	<option value="//api/name/updateScoreLabel">&nbsp;&nbsp;&nbsp;&nbsp;- updateScoreLabel</option>
 	
 	<option value="//api/name/updateUI">&nbsp;&nbsp;&nbsp;&nbsp;- updateUI</option>
 	
@@ -158,21 +166,29 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/displayStatusMessage:">displayStatusMessage:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/formatCardContents:">formatCardContents:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/game">game</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/gameHistory">gameHistory</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/generateMatchMessage:">generateMatchMessage:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getAttributedStringContentOfCard:">getAttributedStringContentOfCard:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getStringContentOfCard:">getStringContentOfCard:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setGameMode">setGameMode</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/titleForCard:">titleForCard:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setTitleForCardButton:ofCard:">setTitleForCardButton:ofCard:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/touchCardButton:">touchCardButton:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateCardButtonUI">updateCardButtonUI</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateGameStatusLabel">updateGameStatusLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateScoreLabel">updateScoreLabel</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateUI">updateUI</a></span></li>
 	
@@ -303,7 +319,31 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/titleForCard:">&ndash;&nbsp;titleForCard:</a></code>
+		<code><a href="#//api/name/setTitleForCardButton:ofCard:">&ndash;&nbsp;setTitleForCardButton:ofCard:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getStringContentOfCard:">&ndash;&nbsp;getStringContentOfCard:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getAttributedStringContentOfCard:">&ndash;&nbsp;getAttributedStringContentOfCard:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/backgroundImageForCard:">&ndash;&nbsp;backgroundImageForCard:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateScoreLabel">&ndash;&nbsp;updateScoreLabel</a></code>
 	</span>
 	
 	
@@ -327,7 +367,7 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/backgroundImageForCard:">&ndash;&nbsp;backgroundImageForCard:</a></code>
+		<code><a href="#//api/name/formatCardContents:">&ndash;&nbsp;formatCardContents:</a></code>
 	</span>
 	
 	
@@ -515,7 +555,7 @@
 	
 	
 
-	<div class="method-subsection method-declaration"><code>- (NSString *)cardContents:(Card *)<em>card</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (id)cardContents:(Card *)<em>card</em></code></div>
 
     
 </div>
@@ -642,6 +682,17 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/formatCardContents:" title="formatCardContents:"></a>
+	<h3 class="subsubtitle method-title">formatCardContents:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)formatCardContents:(Card *)<em>card</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/game" title="game"></a>
 	<h3 class="subsubtitle method-title">game</h3>
 	
@@ -670,6 +721,28 @@
 	
 
 	<div class="method-subsection method-declaration"><code>- (void)generateMatchMessage:(NSString *)<em>message</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getAttributedStringContentOfCard:" title="getAttributedStringContentOfCard:"></a>
+	<h3 class="subsubtitle method-title">getAttributedStringContentOfCard:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSAttributedString *)getAttributedStringContentOfCard:(Card *)<em>card</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getStringContentOfCard:" title="getStringContentOfCard:"></a>
+	<h3 class="subsubtitle method-title">getStringContentOfCard:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)getStringContentOfCard:(Card *)<em>card</em></code></div>
 
     
 </div>
@@ -718,12 +791,12 @@ MODE_NOT_YET_CHOSEN.</p>
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/titleForCard:" title="titleForCard:"></a>
-	<h3 class="subsubtitle method-title">titleForCard:</h3>
+	<a name="//api/name/setTitleForCardButton:ofCard:" title="setTitleForCardButton:ofCard:"></a>
+	<h3 class="subsubtitle method-title">setTitleForCardButton:ofCard:</h3>
 	
 	
 
-	<div class="method-subsection method-declaration"><code>- (NSString *)titleForCard:(Card *)<em>card</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)setTitleForCardButton:(UIButton *)<em>cardButton</em> ofCard:(Card *)<em>card</em></code></div>
 
     
 </div>
@@ -762,6 +835,17 @@ MODE_NOT_YET_CHOSEN.</p>
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/updateScoreLabel" title="updateScoreLabel"></a>
+	<h3 class="subsubtitle method-title">updateScoreLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)updateScoreLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/updateUI" title="updateUI"></a>
 	<h3 class="subsubtitle method-title">updateUI</h3>
 	
@@ -787,7 +871,7 @@ MODE_NOT_YET_CHOSEN.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 AravinthChandran. All rights reserved. (Last updated: 2013-12-22)</span><br />
+						<p><span class="copyright">&copy; 2013 AravinthChandran. All rights reserved. (Last updated: 2013-12-23)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

@@ -77,6 +77,7 @@
 
 -(void) updateUI{
     [self updateCardButtonUI];
+    [self updateScoreLabel];
     [self updateGameStatusLabel];
 }
 
@@ -85,16 +86,31 @@
     for(UIButton *cardButton in self.cardButtons){
         int cardButtonIndex = [self.cardButtons indexOfObject:cardButton];
         Card *card = [self.game cardAtIndex:cardButtonIndex];
-        [cardButton setTitle:[self titleForCard:card] forState:UIControlStateNormal];
+        [self setTitleForCardButton:cardButton ofCard:card];
         [cardButton setBackgroundImage:[self backgroundImageForCard:card]
                               forState:UIControlStateNormal];
         cardButton.enabled = !card.isMatched;
-        self.scoreLabel.text = [NSString stringWithFormat:@"Score  %d",self.game.score];
     }
 }
 
--(NSString *)titleForCard:(Card *)card{
+-(void)setTitleForCardButton:(UIButton *)cardButton ofCard:(Card *)card{
+    id contents = [self cardContents:card];
+    if([contents isKindOfClass:[NSString class]]){
+        [cardButton setTitle:[self getStringContentOfCard:card]
+                    forState:UIControlStateNormal];
+    }else if([contents isKindOfClass:[NSAttributedString class]]){
+        [cardButton setAttributedTitle:[self getAttributedStringContentOfCard:card]
+                              forState:UIControlStateNormal];
+    }
+}
+
+-(NSString *)getStringContentOfCard:(Card *)card{
     return card.isChosen ? [self cardContents:card] : @"";
+}
+
+-(NSAttributedString *)getAttributedStringContentOfCard:(Card *)card{
+    NSAttributedString *contents;
+    return contents;
 }
 
 -(UIImage *)backgroundImageForCard:(Card *)card{
@@ -102,6 +118,10 @@
     [self UnChosenCardBackgroundImage];
 }
 
+//Update ScoreLabel
+-(void)updateScoreLabel{
+    self.scoreLabel.text = [NSString stringWithFormat:@"Score  %d",self.game.score];
+}
 
 //UpdateGameStatusLabel
 -(void) updateGameStatusLabel{
@@ -120,22 +140,34 @@
 
 -(void) displayStatusMessage:(NSString *)message{
     self.gameStatusLabel.text = message;
-    
 }
 
 -(void) generateMatchMessage:(NSString *)message{
     NSString *status = @"The card ";
+    
     for(Card *card in self.game.cardsInvolved){
-        status = [status stringByAppendingString:[NSString stringWithFormat:@" %@ ",[self cardContents:card]]];
+        status = [status stringByAppendingString:[NSString stringWithFormat:@" %@ ",[self formatCardContents:card]]];
     }
     status = [status stringByAppendingString:message];
     self.gameStatusLabel.text = status;
     [self.gameHistory addObject:status];
 }
 
+-(NSString *)formatCardContents:(Card *)card{
+    NSString *cardContents;
+    id contents = [self cardContents:card];
+    if([contents isKindOfClass:[NSString class]]){
+        
+    }else if([contents isKindOfClass:[NSAttributedString class]]){
+        
+    }
+    return cardContents;
+}
+
+//Redeal the game
 - (IBAction)dealButton:(UIButton *)sender {
     self.game = nil;
-    [self updateCardButtonUI];
+    [self updateUI];
     [self.gameHistory removeAllObjects];
     self.isGameConfigured = NO;
     self.gameStatusLabel.text = @"Starting New Game";

@@ -19,7 +19,6 @@
     return [[setCardDeck alloc]init];
 }
 
-
 -(int)setGameMode{
     return SET_3_CARD_MODE;
 }
