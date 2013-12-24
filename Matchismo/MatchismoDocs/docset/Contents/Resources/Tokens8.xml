@@ -39,32 +39,44 @@ MODENOTYET_CHOSEN.</Abstract>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PlayingCardGameViewController/chosenCardBackgroundImage</TokenIdentifier>
-			<Abstract type="html">GameMode Constants</Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/PlayingCardGameViewController/configureCardButtonUI:withCard:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
 			<DeclaredIn>PlayingCardGameViewController.m</DeclaredIn>
 			
-			<Declaration>- (UIImage *)chosenCardBackgroundImage</Declaration>
+			<Declaration>- (void)configureCardButtonUI:(UIButton *)cardButton withCard:(Card *)card</Declaration>
 			
 			
-			<Anchor>//api/name/chosenCardBackgroundImage</Anchor>
+			<Anchor>//api/name/configureCardButtonUI:withCard:</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PlayingCardGameViewController/UnChosenCardBackgroundImage</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/PlayingCardGameViewController/backgroundImageForCard:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>PlayingCardGameViewController.m</DeclaredIn>
 			
-			<Declaration>- (UIImage *)UnChosenCardBackgroundImage</Declaration>
+			<Declaration>- (UIImage *)backgroundImageForCard:(Card *)card</Declaration>
 			
 			
-			<Anchor>//api/name/UnChosenCardBackgroundImage</Anchor>
+			<Anchor>//api/name/backgroundImageForCard:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PlayingCardGameViewController/getStringContentOfCard:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PlayingCardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)getStringContentOfCard:(Card *)card</Declaration>
+			
+			
+			<Anchor>//api/name/getStringContentOfCard:</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PlayingCardGameViewController/cardContents:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">GameMode Constants</Abstract>
 			<DeclaredIn>PlayingCardGameViewController.m</DeclaredIn>
 			
 			<Declaration>- (NSString *)cardContents:(Card *)card</Declaration>

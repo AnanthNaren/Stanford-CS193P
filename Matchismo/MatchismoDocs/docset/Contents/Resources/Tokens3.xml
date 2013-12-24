@@ -39,38 +39,26 @@ MODENOTYET_CHOSEN.</Abstract>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/chosenCardBackgroundImage</TokenIdentifier>
-			<Abstract type="html">GameMode Constants</Abstract>
-			<DeclaredIn>CardGameViewController.h</DeclaredIn>
-			
-			<Declaration>- (UIImage *)chosenCardBackgroundImage</Declaration>
-			
-			
-			<Anchor>//api/name/chosenCardBackgroundImage</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/UnChosenCardBackgroundImage</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CardGameViewController.h</DeclaredIn>
-			
-			<Declaration>- (UIImage *)UnChosenCardBackgroundImage</Declaration>
-			
-			
-			<Anchor>//api/name/UnChosenCardBackgroundImage</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/cardContents:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">GameMode Constants</Abstract>
 			<DeclaredIn>CardGameViewController.h</DeclaredIn>
 			
 			<Declaration>- (id)cardContents:(Card *)card</Declaration>
 			
 			
 			<Anchor>//api/name/cardContents:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/configureCardButtonUI:withCard:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)configureCardButtonUI:(UIButton *)cardbutton withCard:(Card *)card</Declaration>
+			
+			
+			<Anchor>//api/name/configureCardButtonUI:withCard:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
@@ -155,54 +143,6 @@ MODENOTYET_CHOSEN.</Abstract>
 			
 			
 			<Anchor>//api/name/updateCardButtonUI</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/setTitleForCardButton:ofCard:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CardGameViewController.m</DeclaredIn>
-			
-			<Declaration>- (void)setTitleForCardButton:(UIButton *)cardButton ofCard:(Card *)card</Declaration>
-			
-			
-			<Anchor>//api/name/setTitleForCardButton:ofCard:</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/getStringContentOfCard:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CardGameViewController.m</DeclaredIn>
-			
-			<Declaration>- (NSString *)getStringContentOfCard:(Card *)card</Declaration>
-			
-			
-			<Anchor>//api/name/getStringContentOfCard:</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/getAttributedStringContentOfCard:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CardGameViewController.m</DeclaredIn>
-			
-			<Declaration>- (NSAttributedString *)getAttributedStringContentOfCard:(Card *)card</Declaration>
-			
-			
-			<Anchor>//api/name/getAttributedStringContentOfCard:</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/backgroundImageForCard:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CardGameViewController.m</DeclaredIn>
-			
-			<Declaration>- (UIImage *)backgroundImageForCard:(Card *)card</Declaration>
-			
-			
-			<Anchor>//api/name/backgroundImageForCard:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		

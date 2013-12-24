@@ -40,11 +40,10 @@ typedef enum{
     SET_3_CARD_MODE = 3,
 } gameMode;
 
--(UIImage *)chosenCardBackgroundImage;
-
--(UIImage *)UnChosenCardBackgroundImage;
-
 -(id)cardContents:(Card *)card;
+
+-(void)configureCardButtonUI:(UIButton *)cardbutton
+                    withCard:(Card *)card;
 
 
 @end

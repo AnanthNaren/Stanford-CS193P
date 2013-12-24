@@ -39,38 +39,74 @@ MODENOTYET_CHOSEN.</Abstract>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SetCardGameViewController/chosenCardBackgroundImage</TokenIdentifier>
-			<Abstract type="html">GameMode Constants</Abstract>
-			<DeclaredIn>SetCardGameViewController.m</DeclaredIn>
-			
-			<Declaration>- (UIImage *)chosenCardBackgroundImage</Declaration>
-			
-			
-			<Anchor>//api/name/chosenCardBackgroundImage</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SetCardGameViewController/UnChosenCardBackgroundImage</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SetCardGameViewController.m</DeclaredIn>
-			
-			<Declaration>- (UIImage *)UnChosenCardBackgroundImage</Declaration>
-			
-			
-			<Anchor>//api/name/UnChosenCardBackgroundImage</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SetCardGameViewController/cardContents:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">GameMode Constants</Abstract>
 			<DeclaredIn>SetCardGameViewController.m</DeclaredIn>
 			
 			<Declaration>- (id)cardContents:(Card *)card</Declaration>
 			
 			
 			<Anchor>//api/name/cardContents:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SetCardGameViewController/colorAttributeOfCard:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SetCardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (UIColor *)colorAttributeOfCard:(Card *)card</Declaration>
+			
+			
+			<Anchor>//api/name/colorAttributeOfCard:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SetCardGameViewController/addShadeAttributeOfCard:withOldAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SetCardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)addShadeAttributeOfCard:(setCard *)card withOldAttributes:(NSMutableAttributedString *)oldAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/addShadeAttributeOfCard:withOldAttributes:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SetCardGameViewController/configureCardButtonUI:withCard:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SetCardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)configureCardButtonUI:(UIButton *)cardButton withCard:(Card *)card</Declaration>
+			
+			
+			<Anchor>//api/name/configureCardButtonUI:withCard:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SetCardGameViewController/getAttributedContentOfCard:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SetCardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (id)getAttributedContentOfCard:(Card *)card</Declaration>
+			
+			
+			<Anchor>//api/name/getAttributedContentOfCard:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SetCardGameViewController/backgroundImageForCard:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SetCardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (UIImage *)backgroundImageForCard:(Card *)card</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundImageForCard:</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		

@@ -19,12 +19,20 @@
     return SET_2_CARD_MODE;
 }
 
--(UIImage *)chosenCardBackgroundImage{
-    return [UIImage imageNamed:@"cardfront"];
+
+-(void)configureCardButtonUI:(UIButton *)cardButton withCard:(Card *)card{
+    [cardButton setTitle:[self getStringContentOfCard:card]
+                forState:UIControlStateNormal];
+    [cardButton setBackgroundImage:[self backgroundImageForCard:card]
+                          forState:UIControlStateNormal];
 }
 
--(UIImage *)UnChosenCardBackgroundImage{
-    return [UIImage imageNamed:@"cardback"];
+-(UIImage *)backgroundImageForCard:(Card *)card{
+    return [UIImage imageNamed: card.isChosen ? @"cardfront" : @"cardback" ];
+}
+
+-(NSString *)getStringContentOfCard:(Card *)card{
+    return card.isChosen ? [self cardContents:card] : @"";
 }
 
 -(NSString *)cardContents:(Card *)card{

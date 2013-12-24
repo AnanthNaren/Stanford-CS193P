@@ -40,16 +40,12 @@
     return nil;
 }
 
--(UIImage *)chosenCardBackgroundImage{
-    return nil;
-}
-
--(UIImage *)UnChosenCardBackgroundImage{
-    return nil;
-}
-
 -(NSString *)cardContents:(Card *)card{
     return nil;
+}
+
+-(void)configureCardButtonUI:(UIButton *)cardbutton withCard:(Card *)card{
+    return;
 }
 
 - (int)setGameMode{
@@ -86,37 +82,11 @@
     for(UIButton *cardButton in self.cardButtons){
         int cardButtonIndex = [self.cardButtons indexOfObject:cardButton];
         Card *card = [self.game cardAtIndex:cardButtonIndex];
-        [self setTitleForCardButton:cardButton ofCard:card];
-        [cardButton setBackgroundImage:[self backgroundImageForCard:card]
-                              forState:UIControlStateNormal];
+        [self configureCardButtonUI:cardButton withCard:card];
         cardButton.enabled = !card.isMatched;
     }
 }
 
--(void)setTitleForCardButton:(UIButton *)cardButton ofCard:(Card *)card{
-    id contents = [self cardContents:card];
-    if([contents isKindOfClass:[NSString class]]){
-        [cardButton setTitle:[self getStringContentOfCard:card]
-                    forState:UIControlStateNormal];
-    }else if([contents isKindOfClass:[NSAttributedString class]]){
-        [cardButton setAttributedTitle:[self getAttributedStringContentOfCard:card]
-                              forState:UIControlStateNormal];
-    }
-}
-
--(NSString *)getStringContentOfCard:(Card *)card{
-    return card.isChosen ? [self cardContents:card] : @"";
-}
-
--(NSAttributedString *)getAttributedStringContentOfCard:(Card *)card{
-    NSAttributedString *contents;
-    return contents;
-}
-
--(UIImage *)backgroundImageForCard:(Card *)card{
-    return card.isChosen ? [self chosenCardBackgroundImage] :
-    [self UnChosenCardBackgroundImage];
-}
 
 //Update ScoreLabel
 -(void)updateScoreLabel{
