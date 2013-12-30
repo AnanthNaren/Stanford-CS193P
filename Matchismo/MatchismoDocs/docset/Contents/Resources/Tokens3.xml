@@ -171,18 +171,6 @@ MODENOTYET_CHOSEN.</Abstract>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/displayStatusMessage:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CardGameViewController.m</DeclaredIn>
-			
-			<Declaration>- (void)displayStatusMessage:(NSString *)message</Declaration>
-			
-			
-			<Anchor>//api/name/displayStatusMessage:</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/generateMatchMessage:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>CardGameViewController.m</DeclaredIn>
@@ -191,6 +179,30 @@ MODENOTYET_CHOSEN.</Abstract>
 			
 			
 			<Anchor>//api/name/generateMatchMessage:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/useNSStringToDisplay:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)useNSStringToDisplay:(NSString *)message</Declaration>
+			
+			
+			<Anchor>//api/name/useNSStringToDisplay:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/useNSAttributedStringToDisplay:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CardGameViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)useNSAttributedStringToDisplay:(NSString *)message</Declaration>
+			
+			
+			<Anchor>//api/name/useNSAttributedStringToDisplay:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		

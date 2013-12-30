@@ -70,8 +70,6 @@
 	
 	<option value="//api/name/deck">&nbsp;&nbsp;&nbsp;&nbsp;- deck</option>
 	
-	<option value="//api/name/displayStatusMessage:">&nbsp;&nbsp;&nbsp;&nbsp;- displayStatusMessage:</option>
-	
 	<option value="//api/name/game">&nbsp;&nbsp;&nbsp;&nbsp;- game</option>
 	
 	<option value="//api/name/gameHistory">&nbsp;&nbsp;&nbsp;&nbsp;- gameHistory</option>
@@ -89,6 +87,10 @@
 	<option value="//api/name/updateScoreLabel">&nbsp;&nbsp;&nbsp;&nbsp;- updateScoreLabel</option>
 	
 	<option value="//api/name/updateUI">&nbsp;&nbsp;&nbsp;&nbsp;- updateUI</option>
+	
+	<option value="//api/name/useNSAttributedStringToDisplay:">&nbsp;&nbsp;&nbsp;&nbsp;- useNSAttributedStringToDisplay:</option>
+	
+	<option value="//api/name/useNSStringToDisplay:">&nbsp;&nbsp;&nbsp;&nbsp;- useNSStringToDisplay:</option>
 	
 	
 	
@@ -148,8 +150,6 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deck">deck</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/displayStatusMessage:">displayStatusMessage:</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/game">game</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/gameHistory">gameHistory</a></span></li>
@@ -167,6 +167,10 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateScoreLabel">updateScoreLabel</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateUI">updateUI</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/useNSAttributedStringToDisplay:">useNSAttributedStringToDisplay:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/useNSStringToDisplay:">useNSStringToDisplay:</a></span></li>
 	
 </ul></li>
 
@@ -301,13 +305,19 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/displayStatusMessage:">&ndash;&nbsp;displayStatusMessage:</a></code>
+		<code><a href="#//api/name/generateMatchMessage:">&ndash;&nbsp;generateMatchMessage:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/generateMatchMessage:">&ndash;&nbsp;generateMatchMessage:</a></code>
+		<code><a href="#//api/name/useNSStringToDisplay:">&ndash;&nbsp;useNSStringToDisplay:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/useNSAttributedStringToDisplay:">&ndash;&nbsp;useNSAttributedStringToDisplay:</a></code>
 	</span>
 	
 	
@@ -545,7 +555,7 @@
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>Desired <a href="#//api/name/deck">deck</a> of card</p>
+		<p>Desired <a href="../Classes/CardGameViewController.html#//api/name/deck">deck</a> of card</p>
 	</div>
 	
 	
@@ -584,17 +594,6 @@
 	
 
 	<div class="method-subsection method-declaration"><code>- (Deck *)deck</code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/displayStatusMessage:" title="displayStatusMessage:"></a>
-	<h3 class="subsubtitle method-title">displayStatusMessage:</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>- (void)displayStatusMessage:(NSString *)<em>message</em></code></div>
 
     
 </div>
@@ -726,6 +725,28 @@ MODE_NOT_YET_CHOSEN.</p>
 	
 
 	<div class="method-subsection method-declaration"><code>- (void)updateUI</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/useNSAttributedStringToDisplay:" title="useNSAttributedStringToDisplay:"></a>
+	<h3 class="subsubtitle method-title">useNSAttributedStringToDisplay:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)useNSAttributedStringToDisplay:(NSString *)<em>message</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/useNSStringToDisplay:" title="useNSStringToDisplay:"></a>
+	<h3 class="subsubtitle method-title">useNSStringToDisplay:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)useNSStringToDisplay:(NSString *)<em>message</em></code></div>
 
     
 </div>

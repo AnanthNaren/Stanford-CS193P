@@ -108,23 +108,27 @@
     }
 }
 
--(void) displayStatusMessage:(NSString *)message{
-    self.gameStatusLabel.text = message;
-}
-
 -(void) generateMatchMessage:(NSString *)message{
     id contents = [self cardContents:[self.game.cardsInvolved firstObject]];
     if([contents isKindOfClass:[NSString class]]){
-        NSString *status = @"The card ";
-        for(Card *card in self.game.cardsInvolved){
-            status = [status stringByAppendingString:[NSString stringWithFormat:@" %@ ",[self cardContents:card]]];
-        }
-        status = [status stringByAppendingString:message];
-        self.gameStatusLabel.text = status;
-        [self.gameHistory addObject:status];
+        [self useNSStringToDisplay:message];
     }else if([contents isKindOfClass:[NSAttributedString class]]){
-        
+        [self useNSAttributedStringToDisplay:message];
     }
+}
+
+-(void) useNSStringToDisplay:(NSString *)message{
+    NSString *status = @"The card ";
+    for(Card *card in self.game.cardsInvolved){
+        status = [status stringByAppendingString:[NSString stringWithFormat:@" %@ ",[self cardContents:card]]];
+    }
+    status = [status stringByAppendingString:message];
+    self.gameStatusLabel.text = status;
+    [self.gameHistory addObject:status];
+}
+
+-(void) useNSAttributedStringToDisplay:(NSString *)message{
+    
 }
 
 

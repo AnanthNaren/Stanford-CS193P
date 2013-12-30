@@ -678,11 +678,11 @@
             </objects>
             <point key="canvasLocation" x="1478" y="1071"/>
         </scene>
-        <!--Navigation Controller - CardMatchingGame-->
+        <!--Navigation Controller - Playing Card-->
         <scene sceneID="AD7-zB-Y7z">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fb4-Rn-rNk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="CardMatchingGame" id="M80-Lx-Yx3"/>
+                    <tabBarItem key="tabBarItem" title="Playing Card" id="M80-Lx-Yx3"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="e2U-9v-wEA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -697,11 +697,11 @@
             </objects>
             <point key="canvasLocation" x="1478" y="-1308"/>
         </scene>
-        <!--Navigation Controller - SetMatchingGame-->
+        <!--Navigation Controller - Set-->
         <scene sceneID="OFU-cI-Xo8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zd4-G0-8bd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="SetMatchingGame" id="vom-LT-JWR"/>
+                    <tabBarItem key="tabBarItem" title="Set" id="vom-LT-JWR"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ekf-YR-p3M">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
