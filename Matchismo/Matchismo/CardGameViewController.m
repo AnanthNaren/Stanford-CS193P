@@ -65,7 +65,7 @@
 - (IBAction)touchCardButton:(UIButton*)sender {
     [self configureGameSettings];
     if(self.isGameConfigured){
-        int cardButtonIndex = [self.cardButtons indexOfObject:sender];
+        int cardButtonIndex = (int)[self.cardButtons indexOfObject:sender];
         [self.game chooseCardAtIndex:cardButtonIndex];
         [self updateUI];
     }
@@ -80,7 +80,7 @@
 //updateCardButton
 -(void) updateCardButtonUI{
     for(UIButton *cardButton in self.cardButtons){
-        int cardButtonIndex = [self.cardButtons indexOfObject:cardButton];
+        int cardButtonIndex = (int)[self.cardButtons indexOfObject:cardButton];
         Card *card = [self.game cardAtIndex:cardButtonIndex];
         [self configureCardButtonUI:cardButton withCard:card];
         cardButton.enabled = !card.isMatched;
@@ -90,7 +90,7 @@
 
 //Update ScoreLabel
 -(void)updateScoreLabel{
-    self.scoreLabel.text = [NSString stringWithFormat:@"Score  %d",self.game.score];
+    self.scoreLabel.text = [NSString stringWithFormat:@"Score  %ld",(long)self.game.score];
 }
 
 //UpdateGameStatusLabel
@@ -108,16 +108,22 @@
     }
 }
 
+
+/**
+ *  Generate the match message, according to the content of the card. We can find the nature of the card content by interospection. This CardMatchingGame Supports NSString and NSAttributed string content.
+ *
+ *  @param message Message that gets generated along with the card content.
+ */
 -(void) generateMatchMessage:(NSString *)message{
     id contents = [self cardContents:[self.game.cardsInvolved firstObject]];
     if([contents isKindOfClass:[NSString class]]){
-        [self useNSStringToDisplay:message];
+        [self useStringToDisplay:message];
     }else if([contents isKindOfClass:[NSAttributedString class]]){
-        [self useNSAttributedStringToDisplay:message];
+        [self useAttributedStringToDisplay:message];
     }
 }
 
--(void) useNSStringToDisplay:(NSString *)message{
+-(void) useStringToDisplay:(NSString *)message{
     NSString *status = @"The card ";
     for(Card *card in self.game.cardsInvolved){
         status = [status stringByAppendingString:[NSString stringWithFormat:@" %@ ",[self cardContents:card]]];
@@ -127,8 +133,15 @@
     [self.gameHistory addObject:status];
 }
 
--(void) useNSAttributedStringToDisplay:(NSString *)message{
-    
+-(void) useAttributedStringToDisplay:(NSString *)message{
+    NSMutableAttributedString *status = [[NSMutableAttributedString alloc]initWithString:@"The card"];
+    for(Card *card in self.game.cardsInvolved){
+        NSAttributedString *cardContents = [self cardContents:card];
+        [status appendAttributedString:cardContents];
+    }
+    [status appendAttributedString:[[NSMutableAttributedString alloc]initWithString:message]];
+    self.gameStatusLabel.attributedText = status;
+    [self.gameHistory addObject:status];
 }
 
 

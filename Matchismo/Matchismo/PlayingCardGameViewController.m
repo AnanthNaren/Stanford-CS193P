@@ -19,7 +19,6 @@
     return SET_2_CARD_MODE;
 }
 
-
 -(void)configureCardButtonUI:(UIButton *)cardButton withCard:(Card *)card{
     [cardButton setTitle:[self getStringContentOfCard:card]
                 forState:UIControlStateNormal];

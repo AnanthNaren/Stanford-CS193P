@@ -172,37 +172,42 @@ MODENOTYET_CHOSEN.</Abstract>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/generateMatchMessage:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Generate the match message, according to the content of the card. We can find the nature of the card content by interospection. This CardMatchingGame Supports NSString and NSAttributed string content.</Abstract>
 			<DeclaredIn>CardGameViewController.m</DeclaredIn>
 			
 			<Declaration>- (void)generateMatchMessage:(NSString *)message</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>message</Name>
+					<Abstract type="html">Message that gets generated along with the card content.</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/generateMatchMessage:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/useNSStringToDisplay:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/useStringToDisplay:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>CardGameViewController.m</DeclaredIn>
 			
-			<Declaration>- (void)useNSStringToDisplay:(NSString *)message</Declaration>
+			<Declaration>- (void)useStringToDisplay:(NSString *)message</Declaration>
 			
 			
-			<Anchor>//api/name/useNSStringToDisplay:</Anchor>
+			<Anchor>//api/name/useStringToDisplay:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/useNSAttributedStringToDisplay:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CardGameViewController/useAttributedStringToDisplay:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>CardGameViewController.m</DeclaredIn>
 			
-			<Declaration>- (void)useNSAttributedStringToDisplay:(NSString *)message</Declaration>
+			<Declaration>- (void)useAttributedStringToDisplay:(NSString *)message</Declaration>
 			
 			
-			<Anchor>//api/name/useNSAttributedStringToDisplay:</Anchor>
+			<Anchor>//api/name/useAttributedStringToDisplay:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
